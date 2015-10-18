@@ -6,11 +6,11 @@
     android:padding="8dip">
 
     <TextView
-        android:id="@+id/tvFeatureTitle"
+        android:id="@+id/tvPostTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/ivFeaturePhoto"
-        android:layout_toRightOf="@+id/ivFeaturePhoto"
+        android:layout_toEndOf="@+id/ivPostPhoto"
+        android:layout_toRightOf="@+id/ivPostPhoto"
         android:text="Title"
         android:textStyle="bold" />
 
@@ -20,24 +20,24 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignTop="@+id/tvFeatureTitle"
+        android:layout_alignTop="@+id/tvPostTitle"
         android:gravity="right"
         android:singleLine="true"
         android:text="205" />
 
     <TextView
-        android:id="@+id/tvFeatureDescription"
+        android:id="@+id/tvPostDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tvFeatureTitle"
-        android:layout_toEndOf="@+id/ivFeaturePhoto"
-        android:layout_toRightOf="@+id/ivFeaturePhoto"
+        android:layout_below="@+id/tvPostTitle"
+        android:layout_toEndOf="@+id/ivPostPhoto"
+        android:layout_toRightOf="@+id/ivPostPhoto"
         android:autoLink="all"
         android:linksClickable="true"
         android:text="Description" />
 
     <ImageView
-        android:id="@+id/ivFeaturePhoto"
+        android:id="@+id/ivPostPhoto"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_alignParentLeft="true"
@@ -45,16 +45,5 @@
         android:layout_alignParentTop="true"
         android:layout_margin="5dp"
         android:layout_marginRight="5dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="right"
-        android:singleLine="true"
-        android:text="205"
-        android:layout_below="@+id/tvFeatureDescription"
-        android:layout_alignLeft="@+id/tvFeatureDescription"
-        android:layout_alignStart="@+id/tvFeatureDescription" />
 
 </RelativeLayout>

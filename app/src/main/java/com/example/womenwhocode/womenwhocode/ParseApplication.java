@@ -17,8 +17,8 @@ import com.parse.ParseObject;
  * Created by zassmin on 10/15/15.
  */
 public class ParseApplication extends Application {
-    public static final String PARSE_APPLICATION_ID = "";
-    public static final String PARSE_CLIENT_KEY = "";
+    public static final String PARSE_APPLICATION_ID = "twI2kWhB1ImLgnc5rDpA2F8b7TfRVImbZqsywWO1";
+    public static final String PARSE_CLIENT_KEY = "QpMOPn0fte0sdkY8GYKcpsSFhEY2rn3eoJxH73wO";
 
     @Override
     public void onCreate() {
