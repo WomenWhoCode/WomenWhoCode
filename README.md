@@ -60,7 +60,6 @@ When a repository is cloned, it has a default remote called `origin` that points
 1. Keep one commit per feature. If you forgot to add changes, you can edit the previous commit `git commit --amend`
 1. Push to your repo `git push origin branch-name`
 1. Go into [the Github repo](https://github.com/WomenWhoCode/WomenWhoCode.git/) and create a pull request explaining your changes
-1. If you are requested to make changes, edit your commit using `git commit --amend`, push again and the pull request will edit automatically
 1. You will need to add a message on the pull request notifying your changes to your reviewer
 
 ## Current App
