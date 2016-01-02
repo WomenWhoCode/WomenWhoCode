@@ -57,7 +57,7 @@ When a repository is cloned, it has a default remote called `origin` that points
 1. Clean your project from Android Studio `Build/Clean project`
 1. Add the files you changed `git add file_name` (avoid using `git add .`)
 1. Commit your changes `git commit -m "Message briefly explaining the feature"`
-1. Keep one commit per feature. If you forgot to add changes, you can edit the previous commit `git commit --amend`
+1. We have small Pull Requests, try to keep one commit per feature. If you forgot to add changes, you can edit the previous commit `git commit --amend`
 1. Push to your repo `git push origin branch-name`
 1. Go into [the Github repo](https://github.com/WomenWhoCode/WomenWhoCode.git/) and create a pull request explaining your changes
 1. You will need to add a message on the pull request notifying your changes to your reviewer
