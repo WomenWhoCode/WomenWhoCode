@@ -1,37 +1,35 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
     style="@style/page_background_bl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:padding="15dp">
 
     <!-- add a thanks for coming back title! -->
 
     <Button
+        android:id="@+id/button"
         style="@style/button"
-        android:drawableLeft="@drawable/ic_github"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/loginWithGitHub"
-        android:minWidth="220dp"
-        android:id="@+id/button"
         android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/ic_github"
+        android:minWidth="220dp"
+        android:paddingLeft="@dimen/activity_horizontal_padding"
         android:paddingRight="@dimen/activity_horizontal_padding"
-        android:paddingLeft="@dimen/activity_horizontal_padding" />
+        android:text="@string/loginWithGitHub" />
 
     <Button
+        android:id="@+id/btnEmailLogin"
         style="@style/button"
-        android:layout_below="@+id/button"
-        android:drawableLeft="@drawable/ic_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="220dp"
-        android:paddingRight="@dimen/activity_horizontal_padding"
-        android:paddingLeft="@dimen/activity_horizontal_padding"
-        android:text="@string/loginWithEmail"
-        android:id="@+id/btnEmailLogin"
-        android:onClick="loginWithEmail"
+        android:layout_below="@+id/button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
-
-
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:minWidth="220dp"
+        android:paddingLeft="@dimen/activity_horizontal_padding"
+        android:paddingRight="@dimen/activity_horizontal_padding"
+        android:text="@string/loginWithEmail" />
 
 </RelativeLayout>

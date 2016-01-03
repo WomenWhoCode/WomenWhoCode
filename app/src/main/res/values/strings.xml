@@ -18,7 +18,7 @@
     <string name="label_add_members">Invite Members</string>
     <string name="label_members">Members</string>
     <string name="subject_share_post">Hey, I saw this on WomenWhoCode and thought of you.</string>
-    <string name="label_awesome_x">"AWESOME x "</string>
+    <string name="label_awesome_x">AWESOME x %1$d</string>
     <string name="add_post">New post</string>
     <string name="LoginMessage">Thanks !</string>
     <string name="not_valid_username_password">Please fill in a valid username and password</string>
@@ -28,4 +28,6 @@
     <string name="thanks_add_post">Thanks for adding a post!</string>
     <string name="review_msg">We will review and get back to you soon enough!</string>
     <string name="org_name_short">WWCode</string>
+    <string name="network_title">%1$s network</string>
+    <string name="event_location">at %1$s</string>
 </resources>

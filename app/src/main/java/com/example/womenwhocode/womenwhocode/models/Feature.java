@@ -72,7 +72,7 @@ public class Feature extends ParseObject {
     public String getImageUrl() {
         String url = null;
         Object image = this.get(IMAGE_URL_KEY);
-        if (url != null) {
+        if (image != null) {
             url = image.toString();
         }
         return url;

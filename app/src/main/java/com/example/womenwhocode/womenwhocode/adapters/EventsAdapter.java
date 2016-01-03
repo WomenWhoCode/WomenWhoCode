@@ -1,5 +1,6 @@
 package com.example.womenwhocode.womenwhocode.adapters;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,16 +25,12 @@ public class EventsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     private final List<Object> items;
     private final int EVENT = 0, EVENT_HEADER = 1;
 
-    public interface OnItemClickListener {
-        void onItemClick(View itemView, int position);
+    public EventsAdapter(List<Object> items) {
+        this.items = items;
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
         EventsAdapter.listener = listener;
-    }
-
-    public EventsAdapter(List<Object> items) {
-        this.items = items;
     }
 
     @Override
@@ -84,8 +81,10 @@ public class EventsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         TextView tvEventTime = holder.tvEventTime;
         TextView tvEventDate = holder.tvEventDate;
 
+        Context context = tvEventNetwork.getContext(); // get context from parent
+
         if (event.getNetwork() != null) {
-            tvEventNetwork.setText(event.getNetwork().getTitle() + " network");
+            tvEventNetwork.setText(context.getString(R.string.network_title, event.getNetwork().getTitle()));
         }
 
         long time = Utilities.setLocalDateTime(event.getEventDateTime());
@@ -93,7 +92,7 @@ public class EventsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         String prettyTime = Utilities.dateTimeParser(time, Utilities.TIME_FORMAT);
 
         tvEventTitle.setText(event.getTitle());
-        tvEventLocation.setText("at " + event.getLocation());
+        tvEventLocation.setText(context.getString(R.string.event_location, event.getLocation()));
         tvEventTime.setText(prettyTime);
         tvEventDate.setText(date);
     }
@@ -111,6 +110,10 @@ public class EventsAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             return EVENT_HEADER;
         }
         return -1;
+    }
+
+    public interface OnItemClickListener {
+        void onItemClick(View itemView, int position);
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

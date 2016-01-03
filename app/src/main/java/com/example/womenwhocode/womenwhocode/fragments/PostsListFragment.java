@@ -210,7 +210,7 @@ public class PostsListFragment extends Fragment {
 
         // Update the UI thread
         // TODO: it's probably safe to do this before the onAwesome
-        tvAwesomeCount.setText(getString(R.string.label_awesome_x) + String.valueOf(awesomeCount));
+        tvAwesomeCount.setText(getString(R.string.label_awesome_x, awesomeCount));
 
         // Send data to parse
         awesome.saveInBackground();

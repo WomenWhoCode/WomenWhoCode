@@ -166,7 +166,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         // in case a post has a user
         ParseUser postUser = post.getUser();
         Profile profile = getUserProfile(postUser);
-        tvPostNameBy.setText("WWCode"); // always have a default
+        tvPostNameBy.setText(R.string.org_name_short); // always have a default
         if (postUser != null) {
             String username = postUser.getUsername();
             if (profile != null && !TextUtils.isEmpty(profile.getFullName())) {
@@ -213,7 +213,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         tvRelativeDate.setText(relativeDate);
         tvFeatureTitle.setText(title);
 
-        tvAwesomeCount.setText(context.getResources().getString(R.string.label_awesome_x) + String.valueOf(awesomeCount));
+        tvAwesomeCount.setText(context.getResources().getString(R.string.label_awesome_x, awesomeCount));
 
         // Hide the progress bar, show the main view
         pb.setVisibility(ProgressBar.GONE);

@@ -320,7 +320,7 @@ public class TimelineFragment extends Fragment {
         }
 
         // Update the UI thread
-        tvAwesomeCount.setText(getString(R.string.label_awesome_x) + String.valueOf(awesomeCount));
+        tvAwesomeCount.setText(getString(R.string.label_awesome_x, awesomeCount));
 
         // Send data to parse
         awesome.saveInBackground();

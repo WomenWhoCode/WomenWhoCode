@@ -131,8 +131,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
         tvRelativeTime.setText(post.getPostDateTime());
 
         int awesomeCount = post.getAwesomeCount();
-        tvAwesomeCount.setText(context.getResources().getString(R.string.label_awesome_x) + String
-                .valueOf(awesomeCount));
+        tvAwesomeCount.setText(context.getResources().getString(R.string.label_awesome_x, awesomeCount));
     }
 
     private Profile getUserProfile(ParseUser user) {
