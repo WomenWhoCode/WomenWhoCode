@@ -282,6 +282,7 @@ public class UserProfileActivity extends AppCompatActivity {
         Intent i = new Intent(UserProfileActivity.this, TimelineActivity.class);
         startActivity(i);
         overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+        finish();
     }
 
     public void onSelectImage(View view) {
