@@ -1,10 +1,10 @@
 package com.womenwhocode.womenwhocode.utils;
 
-import android.util.Log;
-
 import com.parse.DeleteCallback;
 import com.parse.ParseException;
 import com.parse.ParseObject;
+
+import android.util.Log;
 
 import java.util.List;
 

@@ -1,5 +1,11 @@
 package com.womenwhocode.womenwhocode.adapters;
 
+import com.squareup.picasso.Picasso;
+import com.womenwhocode.womenwhocode.R;
+import com.womenwhocode.womenwhocode.models.Feature;
+import com.womenwhocode.womenwhocode.utils.RoundedImageView;
+import com.womenwhocode.womenwhocode.viewholders.ViewHolderTopicHeader;
+
 import android.content.Context;
 import android.graphics.Color;
 import android.support.v7.widget.CardView;
@@ -8,12 +14,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-import com.squareup.picasso.Picasso;
-import com.womenwhocode.womenwhocode.R;
-import com.womenwhocode.womenwhocode.models.Feature;
-import com.womenwhocode.womenwhocode.utils.RoundedImageView;
-import com.womenwhocode.womenwhocode.viewholders.ViewHolderTopicHeader;
 
 import java.util.List;
 

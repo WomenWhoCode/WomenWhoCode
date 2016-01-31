@@ -1,16 +1,5 @@
 package com.womenwhocode.womenwhocode.adapters;
 
-import android.content.Context;
-import android.support.v7.widget.RecyclerView;
-import android.text.TextUtils;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import com.parse.GetCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
@@ -22,6 +11,17 @@ import com.womenwhocode.womenwhocode.models.Message;
 import com.womenwhocode.womenwhocode.models.Post;
 import com.womenwhocode.womenwhocode.models.Profile;
 import com.womenwhocode.womenwhocode.utils.CircleTransform;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.List;
 

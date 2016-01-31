@@ -1,5 +1,16 @@
 package com.womenwhocode.womenwhocode.fragments;
 
+import com.bumptech.glide.Glide;
+import com.parse.GetCallback;
+import com.parse.ParseException;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
+import com.womenwhocode.womenwhocode.R;
+import com.womenwhocode.womenwhocode.WomenWhoCodeApplication;
+import com.womenwhocode.womenwhocode.adapters.PostsAdapter;
+import com.womenwhocode.womenwhocode.models.Awesome;
+import com.womenwhocode.womenwhocode.models.Post;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -18,17 +29,6 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.parse.GetCallback;
-import com.parse.ParseException;
-import com.parse.ParseQuery;
-import com.parse.ParseUser;
-import com.womenwhocode.womenwhocode.R;
-import com.womenwhocode.womenwhocode.WomenWhoCodeApplication;
-import com.womenwhocode.womenwhocode.adapters.PostsAdapter;
-import com.womenwhocode.womenwhocode.models.Awesome;
-import com.womenwhocode.womenwhocode.models.Post;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -45,6 +45,7 @@ public class PostsListFragment extends Fragment {
     private ProgressBar pb;
     private ParseQuery<Awesome> awesomeParseQuery;
     private ParseUser currentUser;
+    private TextView emptyView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class PostsListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.fragment_posts_list, container, false);
         rvPosts = (RecyclerView) v.findViewById(R.id.lvPosts);
+        emptyView = (TextView) v.findViewById(R.id.empty_view);
 
         // setup the view
         setUpView();
@@ -119,11 +121,11 @@ public class PostsListFragment extends Fragment {
         posts.addAll(postList);
     }
 
-    void add(Post postList) {
+    private void add(Post postList) {
         posts.add(0, postList);
     }
 
-    void scrollToPosition() {
+    private void scrollToPosition() {
         rvPosts.scrollToPosition(0);
     }
 
@@ -136,9 +138,20 @@ public class PostsListFragment extends Fragment {
     }
 
     void noPostsView(String color) {
+        // Set background color of layout
         CoordinatorLayout rlPostLists = (CoordinatorLayout) v.findViewById(R.id.rlPostLists);
         int intColor = Color.parseColor(String.valueOf(color));
         rlPostLists.setBackgroundColor(intColor);
+
+        // Show empty list view
+        rvPosts.setVisibility(View.GONE);
+        emptyView.setVisibility(View.VISIBLE);
+    }
+
+    private void showPosts() {
+        // Hide empty list view
+        rvPosts.setVisibility(View.VISIBLE);
+        emptyView.setVisibility(View.GONE);
     }
 
     void populatePosts() {
@@ -147,9 +160,14 @@ public class PostsListFragment extends Fragment {
 
     private void setUpView() {
         setSpinners();
-
-        // populate data
         populatePosts();
+    }
+
+    public void setReceivedPost(Post post) {
+        showPosts();
+        add(post);
+        notifiedDataChanged();
+        scrollToPosition();
     }
 
     private void animateOnAwesome(final ImageButton awesomeIcon) {

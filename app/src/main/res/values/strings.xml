@@ -43,9 +43,11 @@
     <string name="msg_no_events">No events found near you, sorry.</string>
     <string name="msg_notification_detail">This timeline shows posts that you are following.
     </string>
+    <string name="msg_review">We will review and get back to you soon enough!</string>
     <string name="msg_thanks_adding_post">Thanks for adding a post!</string>
     <string name="msg_thanks">Thanks!</string>
     <string name="network_title">%1$s network</string>
+    <string name="no_data_available">\"Be the first to post!\"</string>
     <string name="org_name_short">WWCode</string>
     <string name="profile_me">current user</string>
     <string name="profile_other">other user</string>
@@ -57,7 +59,6 @@
     <string name="prompt_password">Password</string>
     <string name="prompt_recommend_moderator">Recommend Topic Moderator</string>
     <string name="prompt_username">Username</string>
-    <string name="msg_review">We will review and get back to you soon enough!</string>
     <string name="spinnerPrompt">Select item</string>
     <string name="subject_share_post">Hey, I saw this on WomenWhoCode and thought of you.</string>
     <string name="title_fragment_events">Events</string>

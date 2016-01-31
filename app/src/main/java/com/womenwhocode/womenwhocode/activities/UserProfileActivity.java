@@ -1,5 +1,24 @@
 package com.womenwhocode.womenwhocode.activities;
 
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseFile;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
+import com.parse.SaveCallback;
+import com.womenwhocode.womenwhocode.R;
+import com.womenwhocode.womenwhocode.models.Feature;
+import com.womenwhocode.womenwhocode.models.FeatureTag;
+import com.womenwhocode.womenwhocode.models.Message;
+import com.womenwhocode.womenwhocode.models.Notification;
+import com.womenwhocode.womenwhocode.models.PersonalizationDetails;
+import com.womenwhocode.womenwhocode.models.Profile;
+import com.womenwhocode.womenwhocode.models.Recommendation;
+import com.womenwhocode.womenwhocode.models.Subscribe;
+import com.womenwhocode.womenwhocode.models.Tag;
+import com.womenwhocode.womenwhocode.models.UserNotification;
+
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
@@ -26,25 +45,6 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-
-import com.parse.FindCallback;
-import com.parse.ParseException;
-import com.parse.ParseFile;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
-import com.parse.ParseUser;
-import com.parse.SaveCallback;
-import com.womenwhocode.womenwhocode.R;
-import com.womenwhocode.womenwhocode.models.Feature;
-import com.womenwhocode.womenwhocode.models.FeatureTag;
-import com.womenwhocode.womenwhocode.models.Message;
-import com.womenwhocode.womenwhocode.models.Notification;
-import com.womenwhocode.womenwhocode.models.PersonalizationDetails;
-import com.womenwhocode.womenwhocode.models.Profile;
-import com.womenwhocode.womenwhocode.models.Recommendation;
-import com.womenwhocode.womenwhocode.models.Subscribe;
-import com.womenwhocode.womenwhocode.models.Tag;
-import com.womenwhocode.womenwhocode.models.UserNotification;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

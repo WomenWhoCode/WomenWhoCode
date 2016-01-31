@@ -1,35 +1,36 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="144dp"
-                android:background="@color/teal"
-                android:gravity="bottom"
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/nav_header_height"
+              android:background="@color/teal"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:theme="@style/ThemeOverlay.AppCompat.Dark"
+              android:orientation="vertical"
+              android:gravity="bottom">
 
     <com.womenwhocode.womenwhocode.utils.RoundedImageView
             android:id="@+id/ivPhoto"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
             android:layout_width="@dimen/large_image_view_height_width"
             android:layout_height="@dimen/large_image_view_height_width"
             android:layout_above="@+id/tvFullName"
-            android:layout_marginBottom="@dimen/icon_padding"
             android:background="@drawable/default_user_icon"/>
 
     <TextView
             android:id="@+id/tvFullName"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
             android:layout_above="@+id/tvJobTitle"
-            android:paddingTop="@dimen/icon_padding"
             android:text="@string/prompt_name"
-            android:textStyle="bold"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
     <TextView
             android:id="@+id/tvJobTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:paddingTop="@dimen/icon_padding"
             android:text="@string/prompt_job_title"/>
 
-</RelativeLayout>
+</LinearLayout>

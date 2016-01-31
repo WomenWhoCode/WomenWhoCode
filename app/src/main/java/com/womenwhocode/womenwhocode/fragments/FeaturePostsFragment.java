@@ -1,8 +1,5 @@
 package com.womenwhocode.womenwhocode.fragments;
 
-import android.os.Bundle;
-import android.util.Log;
-
 import com.parse.FindCallback;
 import com.parse.GetCallback;
 import com.parse.ParseException;
@@ -11,6 +8,9 @@ import com.womenwhocode.womenwhocode.models.Feature;
 import com.womenwhocode.womenwhocode.models.Post;
 import com.womenwhocode.womenwhocode.utils.LocalDataStore;
 import com.womenwhocode.womenwhocode.utils.NetworkConnectivityReceiver;
+
+import android.os.Bundle;
+import android.util.Log;
 
 import java.util.List;
 
@@ -66,11 +66,5 @@ public class FeaturePostsFragment extends PostsListFragment {
                 });
             }
         });
-    }
-
-    public void setReceivedPost(Post post) {
-        add(post);
-        notifiedDataChanged();
-        scrollToPosition();
     }
 }

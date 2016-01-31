@@ -1,10 +1,10 @@
 package com.womenwhocode.womenwhocode.widgets;
 
+import com.astuetz.PagerSlidingTabStrip;
+
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-
-import com.astuetz.PagerSlidingTabStrip;
 
 /**
  * Created by zassmin on 11/3/15.

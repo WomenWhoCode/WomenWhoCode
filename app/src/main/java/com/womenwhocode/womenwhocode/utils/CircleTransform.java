@@ -20,12 +20,12 @@ package com.womenwhocode.womenwhocode.utils;
  * limitations under the License.
  */
 
+import com.squareup.picasso.Transformation;
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-
-import com.squareup.picasso.Transformation;
 
 /**
  * Created by julian on 13/6/21.

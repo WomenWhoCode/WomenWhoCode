@@ -1,10 +1,34 @@
 package com.womenwhocode.womenwhocode.activities;
 
+import com.google.android.gms.maps.model.LatLng;
+
+import com.astuetz.PagerSlidingTabStrip;
+import com.parse.GetCallback;
+import com.parse.ParseException;
+import com.parse.ParseGeoPoint;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
+import com.parse.SaveCallback;
+import com.squareup.picasso.Picasso;
+import com.womenwhocode.womenwhocode.R;
+import com.womenwhocode.womenwhocode.WomenWhoCodeApplication;
+import com.womenwhocode.womenwhocode.fragments.EventsFragment;
+import com.womenwhocode.womenwhocode.fragments.FeaturesFragment;
+import com.womenwhocode.womenwhocode.fragments.RecommendFeatureDialog.RecommendFeatureDialogListener;
+import com.womenwhocode.womenwhocode.fragments.TimelineFragment;
+import com.womenwhocode.womenwhocode.models.Event;
+import com.womenwhocode.womenwhocode.models.Feature;
+import com.womenwhocode.womenwhocode.models.Profile;
+import com.womenwhocode.womenwhocode.utils.LocalDataStore;
+import com.womenwhocode.womenwhocode.utils.LocationProvider;
+import com.womenwhocode.womenwhocode.utils.ThemeUtils;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.location.Location;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -28,28 +52,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.astuetz.PagerSlidingTabStrip;
-import com.google.android.gms.maps.model.LatLng;
-import com.parse.GetCallback;
-import com.parse.ParseException;
-import com.parse.ParseGeoPoint;
-import com.parse.ParseQuery;
-import com.parse.ParseUser;
-import com.parse.SaveCallback;
-import com.squareup.picasso.Picasso;
-import com.womenwhocode.womenwhocode.R;
-import com.womenwhocode.womenwhocode.WomenWhoCodeApplication;
-import com.womenwhocode.womenwhocode.fragments.EventsFragment;
-import com.womenwhocode.womenwhocode.fragments.FeaturesFragment;
-import com.womenwhocode.womenwhocode.fragments.RecommendFeatureDialog.RecommendFeatureDialogListener;
-import com.womenwhocode.womenwhocode.fragments.TimelineFragment;
-import com.womenwhocode.womenwhocode.models.Event;
-import com.womenwhocode.womenwhocode.models.Feature;
-import com.womenwhocode.womenwhocode.models.Profile;
-import com.womenwhocode.womenwhocode.utils.LocalDataStore;
-import com.womenwhocode.womenwhocode.utils.LocationProvider;
-import com.womenwhocode.womenwhocode.utils.ThemeUtils;
 
 import java.util.ArrayList;
 
@@ -378,6 +380,12 @@ public class TimelineActivity extends AppCompatActivity implements
         WomenWhoCodeApplication.currentPosition = theme;
         profile.setTheme(theme);
         profile.saveInBackground();
+    }
+
+    public void launchMailClient(MenuItem item) {
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                "mailto", "contact@womenwhocode.com", null));
+        startActivity(Intent.createChooser(emailIntent, null));
     }
 
     // Return the order of the fragments in the view pager

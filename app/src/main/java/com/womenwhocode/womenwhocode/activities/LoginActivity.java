@@ -1,13 +1,13 @@
 package com.womenwhocode.womenwhocode.activities;
 
+import com.womenwhocode.womenwhocode.R;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.View;
-
-import com.womenwhocode.womenwhocode.R;
 
 import pl.droidsonroids.gif.GifDrawable;
 import pl.droidsonroids.gif.GifImageView;

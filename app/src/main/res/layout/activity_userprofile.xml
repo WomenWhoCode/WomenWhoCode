@@ -23,7 +23,7 @@
             android:paddingTop="@dimen/text_large_pf_padding_top"
             android:text="@string/action_review_profile"/>
 
-        <com.womenwhocode.womenwhocode.utils.RoundedImageView
+    <com.womenwhocode.womenwhocode.utils.RoundedImageView
             android:id="@+id/ivphoto"
             android:layout_width="@dimen/large_image_view_height_width"
             android:layout_height="@dimen/large_image_view_height_width"

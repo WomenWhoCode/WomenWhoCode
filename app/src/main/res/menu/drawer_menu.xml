@@ -10,7 +10,8 @@
         <item
                 android:id="@+id/nav_contact_us_fragment"
                 android:icon="@drawable/ic_email"
-                android:title="@string/action_contact_us"/>
+                android:title="@string/action_contact_us"
+                android:onClick="launchMailClient"/>
 
         <item
                 android:id="@+id/theme_switch"
