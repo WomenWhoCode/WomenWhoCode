@@ -104,6 +104,9 @@ public class LoginEmailActivity extends AppCompatActivity {
                     //Toast.makeText(getBaseContext(), "User Login successful", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(LoginEmailActivity.this, TimelineActivity.class);
                     startActivity(i);
+                    finish();
+                    LoginActivity.loginActivityinstance.finish();
+                    PersonalizationActivity.personlisationActivityinstance.finish();
                     overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                 } else {
 //                    Toast.makeText(getBaseContext(), "User Login failed", Toast.LENGTH_SHORT).show();

@@ -1,5 +1,6 @@
 package com.womenwhocode.womenwhocode.activities;
 
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
@@ -32,6 +33,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  */
 public class PersonalizationActivity extends AppCompatActivity {
     private final Question1Fragment question1Fragment = new Question1Fragment();
+    public static Activity personlisationActivityinstance;
 
     private final LogInFragment logInFragment = new LogInFragment();
     private final SignUpFragment signUpFragment = new SignUpFragment();
@@ -43,6 +45,7 @@ public class PersonalizationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        personlisationActivityinstance = this;
         pq = new PersonalizationQuestionnaire();
         pq.build();
         super.onCreate(savedInstanceState);

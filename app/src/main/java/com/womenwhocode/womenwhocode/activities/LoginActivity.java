@@ -1,5 +1,6 @@
 package com.womenwhocode.womenwhocode.activities;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,11 +16,13 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
 public class LoginActivity extends AppCompatActivity {
+    public static Activity loginActivityinstance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        loginActivityinstance = this;
 
         GifImageView gifImageView = (GifImageView) findViewById(R.id.givIntro);
         GifDrawable gifDrawable = (GifDrawable) gifImageView.getBackground();
