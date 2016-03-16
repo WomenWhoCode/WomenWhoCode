@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/edit_name"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/lightestGray">
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightestGray">
 
     <include
-        layout="@layout/suggest_new_feature"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            layout="@layout/suggest_new_feature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
     <EditText
-        android:id="@+id/etRecommendation"
-        style="@style/EditBoxStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/question_horizontal_padding"
-        android:layout_marginRight="@dimen/question_horizontal_padding"
-        android:layout_marginTop="72dp"
-        android:hint="@string/prompt_add_topic"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:textColor="@color/darkBlack" />
+            android:id="@+id/etRecommendation"
+            style="@style/EditBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/question_horizontal_padding"
+            android:layout_marginRight="@dimen/question_horizontal_padding"
+            android:layout_marginTop="72dp"
+            android:hint="@string/prompt_add_topic"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColor="@color/darkBlack"/>
 
     <EditText
-        android:id="@+id/etRecommendSomeone"
-        style="@style/EditBoxStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etRecommendation"
-        android:layout_marginLeft="@dimen/question_horizontal_padding"
-        android:layout_marginRight="@dimen/question_horizontal_padding"
-        android:layout_marginTop="16dp"
-        android:hint="@string/prompt_recommend_moderator"
-        android:imeOptions="actionDone"
-        android:inputType="text"
-        android:textColor="@color/darkBlack" />
+            android:id="@+id/etRecommendSomeone"
+            style="@style/EditBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etRecommendation"
+            android:layout_marginLeft="@dimen/question_horizontal_padding"
+            android:layout_marginRight="@dimen/question_horizontal_padding"
+            android:layout_marginTop="16dp"
+            android:hint="@string/prompt_recommend_moderator"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColor="@color/darkBlack"/>
 </RelativeLayout>

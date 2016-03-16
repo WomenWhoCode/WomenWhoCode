@@ -1,180 +1,180 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/userProfile"
-    style="@style/page_background_bl"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/userProfile"
+                style="@style/page_background_bl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".LoginActivity">
 
 
     <TextView
-        android:id="@+id/txtReview"
-        style="@style/TextView.TitleText.Pf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="false"
-        android:layout_alignParentTop="false"
-        android:layout_centerHorizontal="true"
-        android:focusable="false"
-        android:paddingTop="@dimen/text_large_pf_padding_top"
-        android:text="@string/action_review_profile" />
+            android:id="@+id/txtReview"
+            style="@style/TextView.TitleText.Pf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="true"
+            android:focusable="false"
+            android:paddingTop="@dimen/text_large_pf_padding_top"
+            android:text="@string/action_review_profile"/>
 
     <com.womenwhocode.womenwhocode.utils.RoundedImageView
-        android:id="@+id/ivphoto"
-        android:layout_width="@dimen/large_image_view_height_width"
-        android:layout_height="@dimen/large_image_view_height_width"
-        android:layout_below="@+id/txtReview"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/activity_horizontal_padding"
-        android:background="@drawable/default_user_icon"
-        android:onClick="showCameraIcons" />
+            android:id="@+id/ivphoto"
+            android:layout_width="@dimen/large_image_view_height_width"
+            android:layout_height="@dimen/large_image_view_height_width"
+            android:layout_below="@+id/txtReview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_horizontal_padding"
+            android:background="@drawable/default_user_icon"
+            android:onClick="showCameraIcons"/>
 
     <LinearLayout
-        android:id="@+id/icPhotoIcons"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ivphoto"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
-        android:padding="@dimen/activity_horizontal_padding">
-
-        <ImageButton
-            android:id="@+id/btnCamera"
-            style="@style/button"
+            android:id="@+id/icPhotoIcons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/blackish"
-            android:onClick="onLaunchCamera"
-            android:src="@drawable/ic_camera"
-            android:visibility="invisible" />
+            android:layout_below="@+id/ivphoto"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_padding">
 
         <ImageButton
-            android:id="@+id/btnUpload"
-            style="@style/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/blackish"
-            android:onClick="onSelectImage"
-            android:src="@drawable/ic_fileimage"
-            android:visibility="invisible" />
+                android:id="@+id/btnCamera"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blackish"
+                android:onClick="onLaunchCamera"
+                android:src="@drawable/ic_camera"
+                android:visibility="invisible"/>
+
+        <ImageButton
+                android:id="@+id/btnUpload"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/blackish"
+                android:onClick="onSelectImage"
+                android:src="@drawable/ic_fileimage"
+                android:visibility="invisible"/>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tvName"
-        style="@style/TextViewLabels"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/icPhotoIcons"
-        android:layout_marginLeft="@dimen/activity_horizontal_padding"
-        android:layout_marginRight="@dimen/activity_horizontal_padding"
-        android:text="@string/prompt_name" />
-
-    <EditText
-        android:id="@+id/txtName"
-        style="@style/EditBoxStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/activity_horizontal_padding"
-        android:layout_marginLeft="@dimen/activity_horizontal_padding"
-        android:layout_marginRight="@dimen/activity_horizontal_padding" />
-
-    <TextView
-        android:id="@+id/tvEmail"
-        style="@style/TextViewLabels"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/txtName"
-        android:layout_marginLeft="@dimen/activity_horizontal_padding"
-        android:layout_marginRight="@dimen/activity_horizontal_padding"
-        android:text="@string/prompt_email" />
-
-    <EditText
-        android:id="@+id/txtEmail"
-        style="@style/EditBoxStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="false"
-        android:layout_below="@+id/tvEmail"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/activity_horizontal_padding"
-        android:layout_marginLeft="@dimen/activity_horizontal_padding"
-        android:layout_marginRight="@dimen/activity_horizontal_padding"
-        android:text="@string/prompt_email" />
-
-    <TextView
-        android:id="@+id/tvJob"
-        style="@style/TextViewLabels"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtEmail"
-        android:layout_marginLeft="@dimen/activity_horizontal_padding"
-        android:layout_marginRight="@dimen/activity_horizontal_padding"
-        android:text="@string/prompt_job_title" />
-
-    <EditText
-        android:id="@+id/etJob"
-        style="@style/EditBoxStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvJob"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/activity_horizontal_padding"
-        android:layout_marginLeft="@dimen/activity_horizontal_padding"
-        android:layout_marginRight="@dimen/activity_horizontal_padding" />
-
-    <TextView
-        android:id="@+id/tvNetwrks"
-        style="@style/TextViewLabels"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etJob"
-        android:layout_marginLeft="@dimen/activity_horizontal_padding"
-        android:layout_marginRight="@dimen/activity_horizontal_padding"
-        android:text="@string/prompt_networks" />
-
-    <fr.ganfra.materialspinner.MaterialSpinner
-        android:id="@+id/spnNetwork"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvNetwrks"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/activity_horizontal_padding"
-        android:layout_marginRight="@dimen/activity_horizontal_padding"
-        android:clickable="true"
-        android:focusable="true"
-        android:minHeight="20dp"
-        android:prompt="@string/spinnerPrompt"
-        android:textAlignment="center"
-        app:ms_arrowColor="@color/darkGray"
-        app:ms_baseColor="@color/darkGray"
-        app:ms_multiline="false"
-        app:ms_thickness="0.8dp" />
-    <com.balysv.materialripple.MaterialRippleLayout
-        android:id="@+id/ripple_finalize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="48dp"
-        app:mrl_rippleAlpha="0.5"
-        app:mrl_rippleColor="@color/white"
-        app:mrl_rippleOverlay="true">
-        <Button
-            android:id="@+id/btnFinalize"
-            style="@style/button"
+            android:id="@+id/tvName"
+            style="@style/TextViewLabels"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="OnFinalize"
-            android:paddingLeft="@dimen/activity_horizontal_padding"
-            android:paddingRight="@dimen/activity_horizontal_padding"
-            android:text="@string/action_finalize" />
+            android:layout_below="@id/icPhotoIcons"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:text="@string/prompt_name"/>
+
+    <EditText
+            android:id="@+id/txtName"
+            style="@style/EditBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_padding"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"/>
+
+    <TextView
+            android:id="@+id/tvEmail"
+            style="@style/TextViewLabels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtName"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:text="@string/prompt_email"/>
+
+    <EditText
+            android:id="@+id/txtEmail"
+            style="@style/EditBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/tvEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_padding"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:text="@string/prompt_email"/>
+
+    <TextView
+            android:id="@+id/tvJob"
+            style="@style/TextViewLabels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:text="@string/prompt_job_title"/>
+
+    <EditText
+            android:id="@+id/etJob"
+            style="@style/EditBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvJob"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_horizontal_padding"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"/>
+
+    <TextView
+            android:id="@+id/tvNetwrks"
+            style="@style/TextViewLabels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etJob"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:text="@string/prompt_networks"/>
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/spnNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNetwrks"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="20dp"
+            android:prompt="@string/spinnerPrompt"
+            android:textAlignment="center"
+            app:ms_arrowColor="@color/darkGray"
+            app:ms_baseColor="@color/darkGray"
+            app:ms_multiline="false"
+            app:ms_thickness="0.8dp"/>
+    <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple_finalize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleOverlay="true">
+        <Button
+                android:id="@+id/btnFinalize"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="OnFinalize"
+                android:paddingLeft="@dimen/activity_horizontal_padding"
+                android:paddingRight="@dimen/activity_horizontal_padding"
+                android:text="@string/action_finalize"/>
     </com.balysv.materialripple.MaterialRippleLayout>
 
 </RelativeLayout>

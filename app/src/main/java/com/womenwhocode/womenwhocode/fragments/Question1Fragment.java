@@ -36,7 +36,6 @@ public class Question1Fragment extends Fragment {
             GifImageView img2 = (GifImageView) view.findViewById(R.id.img_2);
             GifImageView img3 = (GifImageView) view.findViewById(R.id.img_3);
 
-            //Toast.makeText(getContext(),String.valueOf(cnt),Toast.LENGTH_LONG);
             TextView tvQuestion = (TextView) view.findViewById(R.id.tvQuestion);
 
             Bundle bundle = this.getArguments();
@@ -100,7 +99,6 @@ public class Question1Fragment extends Fragment {
         }
 
 
-        //Toast.makeText(getContext(),String.valueOf(i),Toast.LENGTH_LONG).show();
         return view;
 
     }

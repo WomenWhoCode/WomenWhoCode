@@ -291,7 +291,6 @@ public class TimelineActivity extends AppCompatActivity implements
                         }
                     });
                 } else if (profile == null) {
-//                    Toast.makeText(getBaseContext(), "profile null", Toast.LENGTH_LONG).show();
                     Log.d("PROFILE_NULL", "");
                 } else {
                     Log.d("PROFILE_ERROR", e.toString());

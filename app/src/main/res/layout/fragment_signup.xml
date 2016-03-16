@@ -1,96 +1,96 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/page_background_bl"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:padding="15dp">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                style="@style/page_background_bl"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="15dp">
 
     <LinearLayout
-        android:id="@+id/llProgressImages"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
-        android:padding="@dimen/activity_horizontal_margin">
+            android:id="@+id/llProgressImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin">
 
         <pl.droidsonroids.gif.GifImageView
-            android:id="@+id/img_1"
-            android:layout_width="@dimen/pf_icon_size"
-            android:layout_height="@dimen/pf_icon_size"
-            android:background="@drawable/personalization_done" />
+                android:id="@+id/img_1"
+                android:layout_width="@dimen/pf_icon_size"
+                android:layout_height="@dimen/pf_icon_size"
+                android:background="@drawable/personalization_done"/>
 
         <pl.droidsonroids.gif.GifImageView
-            android:id="@+id/img_2"
-            android:layout_width="@dimen/pf_icon_size"
-            android:layout_height="@dimen/pf_icon_size"
-            android:background="@drawable/personalization_done" />
+                android:id="@+id/img_2"
+                android:layout_width="@dimen/pf_icon_size"
+                android:layout_height="@dimen/pf_icon_size"
+                android:background="@drawable/personalization_done"/>
 
         <pl.droidsonroids.gif.GifImageView
-            android:id="@+id/img_3"
-            android:layout_width="@dimen/pf_icon_size"
-            android:layout_height="@dimen/pf_icon_size"
-            android:background="@drawable/personalization" />
+                android:id="@+id/img_3"
+                android:layout_width="@dimen/pf_icon_size"
+                android:layout_height="@dimen/pf_icon_size"
+                android:background="@drawable/personalization"/>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
-        style="@style/TextView.TitleText.Pf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/llProgressImages"
-        android:layout_centerHorizontal="true"
-        android:paddingBottom="@dimen/activity_horizontal_padding"
-        android:paddingTop="@dimen/activity_horizontal_padding"
-        android:text="@string/msg_thanks"
-        android:textColor="@color/white" />
+            android:id="@+id/textView"
+            style="@style/TextView.TitleText.Pf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llProgressImages"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/activity_horizontal_padding"
+            android:paddingTop="@dimen/activity_horizontal_padding"
+            android:text="@string/msg_thanks"
+            android:textColor="@color/white"/>
 
     <com.balysv.materialripple.MaterialRippleLayout
-        android:id="@+id/ripple"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="@dimen/ripple_margin_top_signup"
-        android:paddingLeft="@dimen/activity_horizontal_padding"
-        android:paddingRight="@dimen/activity_horizontal_padding"
-        app:mrl_rippleAlpha="0.5"
-        app:mrl_rippleColor="@color/white"
-        app:mrl_rippleOverlay="true">
+            android:id="@+id/ripple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/ripple_margin_top_signup"
+            android:paddingLeft="@dimen/activity_horizontal_padding"
+            android:paddingRight="@dimen/activity_horizontal_padding"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleOverlay="true">
 
 
         <Button
-            android:id="@+id/btnGitHubSignUp"
-            style="@style/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_github"
-            android:minWidth="@dimen/button_minWidth"
-            android:paddingLeft="@dimen/activity_horizontal_padding"
-            android:paddingRight="@dimen/activity_horizontal_padding"
-            android:text="@string/action_signup_github" />
+                android:id="@+id/btnGitHubSignUp"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_github"
+                android:minWidth="@dimen/button_minWidth"
+                android:paddingLeft="@dimen/activity_horizontal_padding"
+                android:paddingRight="@dimen/activity_horizontal_padding"
+                android:text="@string/action_signup_github"/>
     </com.balysv.materialripple.MaterialRippleLayout>
 
     <com.balysv.materialripple.MaterialRippleLayout
-        android:id="@+id/ripple_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ripple"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/ripple_margin"
-        android:layout_marginTop="@dimen/ripple_margin"
-        app:mrl_rippleAlpha="0.5"
-        app:mrl_rippleColor="@color/white"
-        app:mrl_rippleOverlay="true">
-
-        <Button
-            android:id="@+id/btnEmailSignUp"
-            style="@style/button"
+            android:id="@+id/ripple_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_email"
-            android:minWidth="@dimen/button_minWidth"
-            android:paddingLeft="@dimen/activity_horizontal_padding"
-            android:paddingRight="@dimen/activity_horizontal_padding"
-            android:text="@string/action_signup_email" />
+            android:layout_below="@+id/ripple"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/ripple_margin"
+            android:layout_marginTop="@dimen/ripple_margin"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleOverlay="true">
+
+        <Button
+                android:id="@+id/btnEmailSignUp"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email"
+                android:minWidth="@dimen/button_minWidth"
+                android:paddingLeft="@dimen/activity_horizontal_padding"
+                android:paddingRight="@dimen/activity_horizontal_padding"
+                android:text="@string/action_signup_email"/>
     </com.balysv.materialripple.MaterialRippleLayout>
 
 

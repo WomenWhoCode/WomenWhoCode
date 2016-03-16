@@ -1,90 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/signUp"
-    style="@style/page_background_bl"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="@dimen/activity_horizontal_padding">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/signUp"
+                style="@style/page_background_bl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_horizontal_padding">
 
     <ImageView
-        android:layout_width="@dimen/system_icon_size"
-        android:layout_height="@dimen/system_icon_size"
-        android:layout_alignLeft="@+id/txtName"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/txtName"
-        android:onClick="goHome"
-        android:src="@drawable/ic_home" />
+            android:layout_width="@dimen/system_icon_size"
+            android:layout_height="@dimen/system_icon_size"
+            android:layout_alignLeft="@+id/txtName"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/txtName"
+            android:onClick="goHome"
+            android:src="@drawable/ic_home"/>
 
     <TextView
-        android:id="@+id/tvSignUpTitle"
-        style="@style/TextView.TitleText.Pf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:paddingBottom="@dimen/activity_horizontal_padding"
-        android:paddingLeft="@dimen/question_horizontal_padding"
-        android:paddingRight="@dimen/question_horizontal_padding"
-        android:paddingTop="78dp"
-        android:text="@string/title_signup" />
-
-    <EditText
-        android:id="@+id/txtName"
-        style="@style/EditBoxStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/txtEmail"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/activity_horizontal_padding"
-        android:layout_marginRight="@dimen/activity_horizontal_padding"
-        android:hint="@string/prompt_username"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/txtEmail"
-        style="@style/EditBoxStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="@dimen/activity_horizontal_padding"
-        android:layout_marginRight="@dimen/activity_horizontal_padding"
-        android:layout_marginTop="36dp"
-        android:hint="@string/prompt_email"
-        android:inputType="textEmailAddress" />
-
-    <EditText
-        android:id="@+id/txtPwd"
-        style="@style/EditBoxStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtEmail"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/activity_horizontal_padding"
-        android:layout_marginRight="@dimen/activity_horizontal_padding"
-        android:layout_marginTop="35dp"
-        android:hint="@string/prompt_password"
-        android:inputType="textPassword" />
-
-    <com.balysv.materialripple.MaterialRippleLayout
-        android:id="@+id/ripple_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/ripple"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/activity_horizontal_padding"
-        app:mrl_rippleAlpha="0.5"
-        app:mrl_rippleColor="@color/white"
-        app:mrl_rippleOverlay="true">
-
-        <Button
-            android:id="@+id/btnLogin"
-            style="@style/button"
+            android:id="@+id/tvSignUpTitle"
+            style="@style/TextView.TitleText.Pf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="signUpUser"
-            android:text="@string/action_signup" />
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_horizontal_padding"
+            android:paddingLeft="@dimen/question_horizontal_padding"
+            android:paddingRight="@dimen/question_horizontal_padding"
+            android:paddingTop="78dp"
+            android:text="@string/title_signup"/>
+
+    <EditText
+            android:id="@+id/txtName"
+            style="@style/EditBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:hint="@string/prompt_username"
+            android:inputType="text"/>
+
+    <EditText
+            android:id="@+id/txtEmail"
+            style="@style/EditBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:layout_marginTop="36dp"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"/>
+
+    <EditText
+            android:id="@+id/txtPwd"
+            style="@style/EditBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_padding"
+            android:layout_marginTop="35dp"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword"/>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/ripple"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/activity_horizontal_padding"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleOverlay="true">
+
+        <Button
+                android:id="@+id/btnLogin"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="signUpUser"
+                android:text="@string/action_signup"/>
     </com.balysv.materialripple.MaterialRippleLayout>
 
 </RelativeLayout>

@@ -74,16 +74,6 @@ public class LocationProvider implements
             Log.d("Location Updates", "Google Play services is available.");
             return true;
         } else {
-            // Get the error dialog from Google Play services
-            // Dialog errorDialog = GooglePlayServicesUtil.getErrorDialog(resultCode, (Activity) mContext,
-            //         CONNECTION_FAILURE_RESOLUTION_REQUEST);
-
-            // display error dialog
-            // if (errorDialog != null) {
-            //     Log.i(TAG, "Google Play Services Error:" + errorDialog.toString());
-            //     Toast.makeText(mContext, "Google Play Services Error:" + errorDialog.toString(), Toast.LENGTH_SHORT).show();
-            // }
-
             return false;
         }
     }
@@ -119,21 +109,12 @@ public class LocationProvider implements
     @Override
     public void onConnectionSuspended(int i) {
         if (i == CAUSE_SERVICE_DISCONNECTED) {
-//            Toast.makeText(mContext, "Disconnected. Please re-connect.", Toast.LENGTH_SHORT).show();
         } else if (i == CAUSE_NETWORK_LOST) {
-//            Toast.makeText(mContext, "Network lost. Please re-connect.", Toast.LENGTH_SHORT).show();
         }
     }
 
     @Override
     public void onLocationChanged(Location location) {
-/*        Report to the UI that the location was updated
-        String msg = "Updated Location: " +
-                Double.toString(location.getLatitude()) + "," +
-                Double.toString(location.getLongitude());
-        Toast.makeText(mContext, msg, Toast.LENGTH_SHORT).show();
-        update profile location data !
-                mLocationCallback.handleNewLocation(mCurrentLocation);*/
     }
 
     @Override
@@ -158,8 +139,6 @@ public class LocationProvider implements
                 e.printStackTrace();
             }
         } else {
-//            Toast.makeText(mContext,
-//                    "Sorry. Location services not available to you", Toast.LENGTH_LONG).show();
         }
     }
 

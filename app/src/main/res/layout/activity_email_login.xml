@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/email_login"
-    style="@style/page_background_bl"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/email_login"
+                style="@style/page_background_bl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/etEmail"
-        style="EditBoxStyle"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:hint="@string/prompt_email"
-        android:inputType="textEmailAddress"
-        android:textColor="@color/white"
-        android:textColorHint="@color/lightGray"
-        android:textColorLink="@color/white"
-        android:textStyle="normal" />
+            android:id="@+id/etEmail"
+            style="EditBoxStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lightGray"
+            android:textColorLink="@color/white"
+            android:textStyle="normal"/>
 
     <EditText
-        android:id="@+id/etPwd"
-        style="EditBoxStyle"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:hint="@string/prompt_password"
-        android:inputType="textPassword"
-        android:textColor="@color/white"
-        android:textColorHint="@color/lightGray" />
+            android:id="@+id/etPwd"
+            style="EditBoxStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/lightGray"/>
 
 
     <com.balysv.materialripple.MaterialRippleLayout
-        android:id="@+id/ripple_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/etPwd"
-        android:layout_alignLeft="@+id/etPwd"
-        android:layout_alignRight="@+id/etPwd"
-        android:layout_alignStart="@+id/etPwd"
-        android:layout_below="@+id/etPwd"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/ripple_margin_top"
-        app:mrl_rippleAlpha="0.5"
-        app:mrl_rippleColor="@color/white"
-        app:mrl_rippleOverlay="true">
+            android:id="@+id/ripple_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/etPwd"
+            android:layout_alignLeft="@+id/etPwd"
+            android:layout_alignRight="@+id/etPwd"
+            android:layout_alignStart="@+id/etPwd"
+            android:layout_below="@+id/etPwd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ripple_margin_top"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleOverlay="true">
 
         <Button
-            android:id="@+id/txtSignUp"
-            style="@style/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:onClick="Login"
-            android:text="@string/action_login" />
+                android:id="@+id/txtSignUp"
+                style="@style/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="Login"
+                android:text="@string/action_login"/>
     </com.balysv.materialripple.MaterialRippleLayout>
 
 </RelativeLayout>

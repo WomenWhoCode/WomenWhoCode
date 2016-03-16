@@ -224,7 +224,6 @@ public class AddPostDialogFragment extends DialogFragment {
 
                 ivPreview.setImageBitmap(finalImg);
             } else { // Result was a failure
-//                    Toast.makeText(this, "Picture wasn't taken!", Toast.LENGTH_SHORT).show();
             }
         }
     }

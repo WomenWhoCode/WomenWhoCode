@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/lightestGray"
-    android:orientation="vertical">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightestGray"
+                android:orientation="vertical">
 
     <!-- action bar -->
     <include
-        layout="@layout/add_post_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            layout="@layout/add_post_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
     <ImageView
-        android:id="@+id/showImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tbAddPost"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/question_horizontal_padding"
-        android:layout_marginRight="@dimen/question_horizontal_padding"
-        android:layout_marginTop="@dimen/activity_horizontal_margin" />
+            android:id="@+id/showImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tbAddPost"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/question_horizontal_padding"
+            android:layout_marginRight="@dimen/question_horizontal_padding"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"/>
 
     <EditText
-        android:id="@+id/etAddPost"
-        style="@style/EditBoxStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/showImage"
-        android:layout_marginBottom="@dimen/activity_horizontal_margin"
-        android:layout_marginLeft="@dimen/question_horizontal_padding"
-        android:layout_marginRight="@dimen/question_horizontal_padding"
-        android:layout_marginTop="32dp"
-        android:gravity="top"
-        android:hint="@string/hint_new_post"
-        android:minHeight="72dp"
-        android:textColor="@color/darkBlack" />
+            android:id="@+id/etAddPost"
+            style="@style/EditBoxStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showImage"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/question_horizontal_padding"
+            android:layout_marginRight="@dimen/question_horizontal_padding"
+            android:layout_marginTop="32dp"
+            android:gravity="top"
+            android:hint="@string/hint_new_post"
+            android:minHeight="72dp"
+            android:textColor="@color/darkBlack"/>
 
     <ImageButton
-        android:id="@+id/btnCamera"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etAddPost"
-        android:layout_marginLeft="@dimen/question_horizontal_padding"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:background="@color/darkGray"
-        android:src="@drawable/ic_camera" />
+            android:id="@+id/btnCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etAddPost"
+            android:layout_marginLeft="@dimen/question_horizontal_padding"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@color/darkGray"
+            android:src="@drawable/ic_camera"/>
 
     <ImageButton
-        android:id="@+id/btnpicUpload"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/etAddPost"
-        android:layout_toRightOf="@+id/btnCamera"
-        android:background="@color/darkGray"
-        android:src="@drawable/ic_fileimage" />
+            android:id="@+id/btnpicUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etAddPost"
+            android:layout_toRightOf="@+id/btnCamera"
+            android:background="@color/darkGray"
+            android:src="@drawable/ic_fileimage"/>
 
 </RelativeLayout>

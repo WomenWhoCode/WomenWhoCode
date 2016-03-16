@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+      xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/action_view_followers"
-        android:title="@string/action_view_followers"
-        app:showAsAction="never" />
+            android:id="@+id/action_view_followers"
+            android:title="@string/action_view_followers"
+            app:showAsAction="never"/>
 
     <item
-        android:id="@+id/action_add_post"
-        android:icon="@drawable/ic_add_post"
-        android:onClick="onLaunchAddPostDialog"
-        android:title="@string/hint_new_post"
-        app:showAsAction="ifRoom" />
+            android:id="@+id/action_add_post"
+            android:icon="@drawable/ic_add_post"
+            android:onClick="onLaunchAddPostDialog"
+            android:title="@string/hint_new_post"
+            app:showAsAction="ifRoom"/>
 </menu>

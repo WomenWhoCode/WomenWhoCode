@@ -1,105 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="@dimen/view_margin">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/view_margin">
 
     <!-- make one or the other gone depending whether message matches current user -->
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/rlCurrentUser"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                    android:id="@+id/rlCurrentUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/ivCurrentUserProfile"
-            android:layout_width="@dimen/regular_image_view_height_width"
-            android:layout_height="@dimen/regular_image_view_height_width"
-            android:layout_alignParentRight="true"
-            android:contentDescription="@string/profile_me"
-            android:padding="@dimen/icon_padding"
-            android:src="@mipmap/ic_wwc" />
+                android:id="@+id/ivCurrentUserProfile"
+                android:layout_width="@dimen/regular_image_view_height_width"
+                android:layout_height="@dimen/regular_image_view_height_width"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/profile_me"
+                android:padding="@dimen/icon_padding"
+                android:src="@mipmap/ic_wwc"/>
 
         <TextView
-            android:id="@+id/tvFullName"
-            style="?chatSubheaders"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/ivCurrentUserProfile"
-            android:padding="@dimen/icon_padding"
-            android:text="@string/hint_name" />
+                android:id="@+id/tvFullName"
+                style="?chatSubheaders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ivCurrentUserProfile"
+                android:padding="@dimen/icon_padding"
+                android:text="@string/hint_name"/>
 
         <TextView
-            android:id="@+id/tvCreatedAt"
-            style="?smallTextDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/tvFullName"
-            android:padding="@dimen/icon_padding"
-            android:text="@string/hint_time" />
+                android:id="@+id/tvCreatedAt"
+                style="?smallTextDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/tvFullName"
+                android:padding="@dimen/icon_padding"
+                android:text="@string/hint_time"/>
 
         <com.github.library.bubbleview.BubbleTextVew
-            android:id="@+id/tvBody"
-            style="@style/BubbleTextView.ChatBody.CurrentUser"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tvFullName"
-            android:layout_toLeftOf="@id/ivCurrentUserProfile"
-            android:padding="@dimen/bubble_padding"
-            android:text="@string/hint_msg_body"
-            app:angle="@dimen/button_radius"
-            app:arrowHeight="@dimen/arrow_height"
-            app:arrowLocation="right"
-            app:arrowWidth="@dimen/arrow_width"
-            app:bubbleColor="@color/teal" />
+                android:id="@+id/tvBody"
+                style="@style/BubbleTextView.ChatBody.CurrentUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvFullName"
+                android:layout_toLeftOf="@id/ivCurrentUserProfile"
+                android:padding="@dimen/bubble_padding"
+                android:text="@string/hint_msg_body"
+                app:angle="@dimen/button_radius"
+                app:arrowHeight="@dimen/arrow_height"
+                app:arrowLocation="right"
+                app:arrowWidth="@dimen/arrow_width"
+                app:bubbleColor="@color/teal"/>
 
     </RelativeLayout>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/rlOtherUser"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+                    android:id="@+id/rlOtherUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/ivOtherProfileLeft"
-            android:layout_width="@dimen/regular_image_view_height_width"
-            android:layout_height="@dimen/regular_image_view_height_width"
-            android:layout_alignParentLeft="true"
-            android:contentDescription="@string/profile_other"
-            android:padding="@dimen/icon_padding"
-            android:src="@mipmap/ic_wwc" />
+                android:id="@+id/ivOtherProfileLeft"
+                android:layout_width="@dimen/regular_image_view_height_width"
+                android:layout_height="@dimen/regular_image_view_height_width"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@string/profile_other"
+                android:padding="@dimen/icon_padding"
+                android:src="@mipmap/ic_wwc"/>
 
         <TextView
-            android:id="@+id/tvOtherFullName"
-            style="?chatSubheaders"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/ivOtherProfileLeft"
-            android:padding="@dimen/icon_padding"
-            android:text="@string/hint_name" />
+                android:id="@+id/tvOtherFullName"
+                style="?chatSubheaders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivOtherProfileLeft"
+                android:padding="@dimen/icon_padding"
+                android:text="@string/hint_name"/>
 
         <TextView
-            android:id="@+id/tvOtherCreatedAt"
-            style="?smallTextDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/tvOtherFullName"
-            android:padding="@dimen/icon_padding"
-            android:text="@string/hint_time" />
+                android:id="@+id/tvOtherCreatedAt"
+                style="?smallTextDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvOtherFullName"
+                android:padding="@dimen/icon_padding"
+                android:text="@string/hint_time"/>
 
         <com.github.library.bubbleview.BubbleTextVew
-            android:id="@+id/tvOtherBody"
-            style="?chatBubbleOtherUser"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tvOtherFullName"
-            android:layout_toRightOf="@+id/ivOtherProfileLeft"
-            android:padding="@dimen/bubble_padding"
-            android:text="@string/hint_msg_body"
-            app:angle="@dimen/button_radius"
-            app:arrowHeight="@dimen/arrow_height"
-            app:arrowLocation="left"
-            app:arrowWidth="@dimen/arrow_width" />
+                android:id="@+id/tvOtherBody"
+                style="?chatBubbleOtherUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvOtherFullName"
+                android:layout_toRightOf="@+id/ivOtherProfileLeft"
+                android:padding="@dimen/bubble_padding"
+                android:text="@string/hint_msg_body"
+                app:angle="@dimen/button_radius"
+                app:arrowHeight="@dimen/arrow_height"
+                app:arrowLocation="left"
+                app:arrowWidth="@dimen/arrow_width"/>
 
     </RelativeLayout>
 
