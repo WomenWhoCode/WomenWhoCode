@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?><!-- This is the fragment  to be displayed for a section associated with a tab -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="1">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="1">
 
     <ProgressBar
-        android:id="@+id/pbLoading"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        android:visibility="gone" />
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/lvEvents"
-        style="?mainBackground"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="16dp"
-        android:visibility="gone" />
+            android:id="@+id/lvEvents"
+            style="?mainBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:visibility="gone"/>
 
     <TextView
-        android:id="@+id/noEventFoundText"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:gravity="center"
-        android:text="@string/msg_no_events"
-        android:textSize="18sp"
-        android:visibility="gone" />
+            android:id="@+id/noEventFoundText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/msg_no_events"
+            android:textSize="18sp"
+            android:visibility="gone"/>
 
 </LinearLayout>

@@ -1,12 +1,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".activities.EventDetailsActivity">
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".activities.EventDetailsActivity">
 
     <item
-        android:id="@+id/action_add_post"
-        android:icon="@drawable/ic_add_post"
-        android:onClick="onLaunchAddPostDialog"
-        android:title="@string/hint_new_post"
-        app:showAsAction="always" />
+            android:id="@+id/action_add_post"
+            android:icon="@drawable/ic_add_post"
+            android:onClick="onLaunchAddPostDialog"
+            android:title="@string/hint_new_post"
+            app:showAsAction="always"/>
 </menu>

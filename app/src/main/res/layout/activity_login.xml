@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/login_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/blackish"
-    android:orientation="vertical">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/login_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blackish"
+                android:orientation="vertical">
 
     <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/givIntro"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@drawable/wwc_intro" />
+            android:id="@+id/givIntro"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/wwc_intro"/>
 
     <ImageView
-        android:id="@+id/ivLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="88dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/givIntro"
-        android:layout_marginTop="@dimen/text_large_margin_top"
-        android:src="@drawable/official_wwcode_logo" />
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/givIntro"
+            android:layout_marginTop="@dimen/text_large_margin_top"
+            android:src="@drawable/official_wwcode_logo"/>
 
     <LinearLayout
-        android:id="@+id/rlSignin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ivLogo"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal">
-
-        <com.balysv.materialripple.MaterialRippleLayout
-            android:id="@+id/ripple"
+            android:id="@+id/rlSignin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/text_large_margin_top"
-            android:layout_marginLeft="@dimen/activity_horizontal_padding"
-            android:layout_marginRight="@dimen/icon_padding"
-            android:layout_marginTop="@dimen/activity_horizontal_padding"
-            app:mrl_rippleAlpha="0.5"
-            app:mrl_rippleColor="@color/white"
-            app:mrl_rippleOverlay="true">
+            android:layout_below="@+id/ivLogo"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnJoin"
-                style="@style/landingPage"
+        <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/ripple"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minWidth="@dimen/login_button_minWidth"
-                android:onClick="JoinApp"
-                android:text="@string/action_join_us" />
+                android:layout_marginBottom="@dimen/text_large_margin_top"
+                android:layout_marginLeft="@dimen/activity_horizontal_padding"
+                android:layout_marginRight="@dimen/icon_padding"
+                android:layout_marginTop="@dimen/activity_horizontal_padding"
+                app:mrl_rippleAlpha="0.5"
+                app:mrl_rippleColor="@color/white"
+                app:mrl_rippleOverlay="true">
+
+            <Button
+                    android:id="@+id/btnJoin"
+                    style="@style/landingPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/login_button_minWidth"
+                    android:onClick="JoinApp"
+                    android:text="@string/action_join_us"/>
         </com.balysv.materialripple.MaterialRippleLayout>
 
 
         <com.balysv.materialripple.MaterialRippleLayout
-            android:id="@+id/ripple_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/text_large_margin_top"
-            android:layout_marginLeft="@dimen/activity_horizontal_padding"
-            android:layout_marginRight="@dimen/icon_padding"
-            android:layout_marginTop="@dimen/activity_horizontal_padding"
-            app:mrl_rippleAlpha="0.5"
-            app:mrl_rippleColor="@color/white"
-            app:mrl_rippleOverlay="true">
-
-            <Button
-                android:id="@+id/btnLogIn"
-                style="@style/landingPage"
+                android:id="@+id/ripple_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minWidth="@dimen/login_button_minWidth"
-                android:onClick="LogInToApp"
-                android:text="@string/action_login" />
+                android:layout_marginBottom="@dimen/text_large_margin_top"
+                android:layout_marginLeft="@dimen/activity_horizontal_padding"
+                android:layout_marginRight="@dimen/icon_padding"
+                android:layout_marginTop="@dimen/activity_horizontal_padding"
+                app:mrl_rippleAlpha="0.5"
+                app:mrl_rippleColor="@color/white"
+                app:mrl_rippleOverlay="true">
+
+            <Button
+                    android:id="@+id/btnLogIn"
+                    style="@style/landingPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/login_button_minWidth"
+                    android:onClick="LogInToApp"
+                    android:text="@string/action_login"/>
         </com.balysv.materialripple.MaterialRippleLayout>
 
 

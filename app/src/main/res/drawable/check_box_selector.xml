@@ -2,26 +2,36 @@
 
     <!-- Enabled states -->
 
-    <item android:drawable="@drawable/btn_check_on" android:state_checked="true" android:state_enabled="true" android:state_window_focused="false" />
-    <item android:drawable="@drawable/btn_check_off" android:state_checked="false" android:state_enabled="true" android:state_window_focused="false" />
+    <item android:drawable="@drawable/btn_check_on" android:state_checked="true"
+          android:state_enabled="true" android:state_window_focused="false"/>
+    <item android:drawable="@drawable/btn_check_off" android:state_checked="false"
+          android:state_enabled="true" android:state_window_focused="false"/>
 
-    <item android:drawable="@drawable/btn_check_on_pressed" android:state_checked="true" android:state_enabled="true" android:state_pressed="true" />
-    <item android:drawable="@drawable/btn_check_off_pressed" android:state_checked="false" android:state_enabled="true" android:state_pressed="true" />
+    <item android:drawable="@drawable/btn_check_on_pressed" android:state_checked="true"
+          android:state_enabled="true" android:state_pressed="true"/>
+    <item android:drawable="@drawable/btn_check_off_pressed" android:state_checked="false"
+          android:state_enabled="true" android:state_pressed="true"/>
 
 
-    <item android:drawable="@drawable/btn_check_off" android:state_checked="false" android:state_enabled="true" />
-    <item android:drawable="@drawable/btn_check_on" android:state_checked="true" android:state_enabled="true" />
+    <item android:drawable="@drawable/btn_check_off" android:state_checked="false"
+          android:state_enabled="true"/>
+    <item android:drawable="@drawable/btn_check_on" android:state_checked="true"
+          android:state_enabled="true"/>
 
 
     <!-- Disabled states -->
 
-    <item android:drawable="@drawable/btn_check_on_disabled" android:state_checked="true" android:state_window_focused="false" />
-    <item android:drawable="@drawable/btn_check_off_disabled" android:state_checked="false" android:state_window_focused="false" />
+    <item android:drawable="@drawable/btn_check_on_disabled" android:state_checked="true"
+          android:state_window_focused="false"/>
+    <item android:drawable="@drawable/btn_check_off_disabled" android:state_checked="false"
+          android:state_window_focused="false"/>
 
-    <item android:drawable="@drawable/btn_check_on_disabled" android:state_checked="true" android:state_focused="true" />
-    <item android:drawable="@drawable/btn_check_off_disabled" android:state_checked="false" android:state_focused="true" />
+    <item android:drawable="@drawable/btn_check_on_disabled" android:state_checked="true"
+          android:state_focused="true"/>
+    <item android:drawable="@drawable/btn_check_off_disabled" android:state_checked="false"
+          android:state_focused="true"/>
 
-    <item android:drawable="@drawable/btn_check_off_disabled" android:state_checked="false" />
-    <item android:drawable="@drawable/btn_check_on_disabled" android:state_checked="true" />
+    <item android:drawable="@drawable/btn_check_off_disabled" android:state_checked="false"/>
+    <item android:drawable="@drawable/btn_check_on_disabled" android:state_checked="true"/>
 
 </selector>

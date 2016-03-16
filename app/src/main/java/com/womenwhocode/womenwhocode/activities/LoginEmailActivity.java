@@ -58,13 +58,11 @@ public class LoginEmailActivity extends AppCompatActivity {
                 if (e == null) {
                     if (objects.size() != 0) {
                         ValidateUser(objects.get(0).getString("username"), pwd);
-                        // Toast.makeText(getBaseContext(), objects.get(0).getString("username"), Toast.LENGTH_SHORT).show();
                     }else{
                         Snackbar.make(msnackbar, getResources().getString(R.string.error_invalid_username_password), Snackbar.LENGTH_LONG).show();
                     }
                 } else {
                     Snackbar.make(msnackbar, getResources().getString(R.string.error_login_failed), Snackbar.LENGTH_LONG).show();
-//                    Toast.makeText(getBaseContext(), "Query unsuccessful", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -108,7 +106,6 @@ public class LoginEmailActivity extends AppCompatActivity {
                         }
                     }
 
-                    //Toast.makeText(getBaseContext(), "User Login successful", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(LoginEmailActivity.this, TimelineActivity.class);
                     i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -116,7 +113,6 @@ public class LoginEmailActivity extends AppCompatActivity {
                     overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                 } else {
                     Snackbar.make(msnackbar, getResources().getString(R.string.error_invalid_username_password), Snackbar.LENGTH_LONG).show();
-//                    Toast.makeText(getBaseContext(), "User Login failed", Toast.LENGTH_SHORT).show();
                 }
             }
         });

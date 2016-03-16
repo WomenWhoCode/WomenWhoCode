@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android"
-    android:oneshot="true">
+                android:oneshot="true">
     <item
-        android:drawable="@drawable/on_1"
-        android:duration="35" />
+            android:drawable="@drawable/on_1"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_2"
-        android:duration="35" />
+            android:drawable="@drawable/on_2"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_3"
-        android:duration="35" />
+            android:drawable="@drawable/on_3"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_4"
-        android:duration="35" />
+            android:drawable="@drawable/on_4"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_5"
-        android:duration="35" />
+            android:drawable="@drawable/on_5"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_6"
-        android:duration="35" />
+            android:drawable="@drawable/on_6"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_7"
-        android:duration="35" />
+            android:drawable="@drawable/on_7"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_8"
-        android:duration="35" />
+            android:drawable="@drawable/on_8"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_9"
-        android:duration="35" />
+            android:drawable="@drawable/on_9"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_10"
-        android:duration="35" />
+            android:drawable="@drawable/on_10"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_11"
-        android:duration="35" />
+            android:drawable="@drawable/on_11"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_12"
-        android:duration="35" />
+            android:drawable="@drawable/on_12"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_13"
-        android:duration="35" />
+            android:drawable="@drawable/on_13"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/on_14"
-        android:duration="35" />
+            android:drawable="@drawable/on_14"
+            android:duration="35"/>
     <item
-        android:drawable="@drawable/btn_check_on"
-        android:duration="35" />
+            android:drawable="@drawable/btn_check_on"
+            android:duration="35"/>
 </animation-list>

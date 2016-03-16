@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/cvNotifications"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        card_view:cardBackgroundColor="@color/blackish"
-        card_view:cardCornerRadius="1.5dp"
-        card_view:cardElevation="@dimen/card_elevation">
+                                        android:id="@+id/cvNotifications"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        card_view:cardBackgroundColor="@color/blackish"
+                                        card_view:cardCornerRadius="1.5dp"
+                                        card_view:cardElevation="@dimen/card_elevation">
 
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/rlNotification"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                        android:id="@+id/rlNotification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
             <ImageButton
-                android:id="@+id/ibNotificationClose"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:background="@android:color/transparent"
-                android:padding="@dimen/icon_padding"
-                android:src="@drawable/ic_close" />
+                    android:id="@+id/ibNotificationClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/icon_padding"
+                    android:src="@drawable/ic_close"/>
 
             <ImageView
-                android:id="@+id/ivNotificationImage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"
-                android:layout_below="@+id/ibNotificationClose"
-                android:minHeight="75dp"
-                android:paddingLeft="@dimen/white_background_padding"
-                android:paddingRight="@dimen/white_background_padding"
-                android:paddingTop="@dimen/icon_paddingTop" />
+                    android:id="@+id/ivNotificationImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ibNotificationClose"
+                    android:minHeight="75dp"
+                    android:paddingLeft="@dimen/white_background_padding"
+                    android:paddingRight="@dimen/white_background_padding"
+                    android:paddingTop="@dimen/icon_paddingTop"/>
 
             <TextView
-                android:id="@+id/tvNotificationMessage"
-                style="@style/TextView.TitleText.Notification"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/ivNotificationImage"
-                android:layout_centerHorizontal="true"
-                android:paddingBottom="@dimen/notification_padding_vertical"
-                android:paddingLeft="@dimen/notification_padding_horizontal"
-                android:paddingRight="@dimen/notification_padding_horizontal"
-                android:text="@string/msg_notification_detail" />
+                    android:id="@+id/tvNotificationMessage"
+                    style="@style/TextView.TitleText.Notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivNotificationImage"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/notification_padding_vertical"
+                    android:paddingLeft="@dimen/notification_padding_horizontal"
+                    android:paddingRight="@dimen/notification_padding_horizontal"
+                    android:text="@string/msg_notification_detail"/>
 
         </RelativeLayout>
     </android.support.v7.widget.CardView>

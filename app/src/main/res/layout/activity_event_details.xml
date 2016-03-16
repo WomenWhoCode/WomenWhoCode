@@ -1,99 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/llEventView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+              android:id="@+id/llEventView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
     <!-- action bar -->
     <include
-        layout="@layout/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
     <ProgressBar
-        android:id="@+id/pbLoading"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        android:visibility="gone" />
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
 
     <!-- FIXME: consider making this it's own fragment -->
     <RelativeLayout
-        android:id="@+id/rlEvents"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/teal"
-        android:paddingBottom="@dimen/activity_horizontal_padding"
-        android:paddingLeft="@dimen/activity_horizontal_padding"
-        android:paddingRight="@dimen/activity_horizontal_padding"
-        android:paddingTop="@dimen/detail_padding_top">
+            android:id="@+id/rlEvents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal"
+            android:paddingBottom="@dimen/activity_horizontal_padding"
+            android:paddingLeft="@dimen/activity_horizontal_padding"
+            android:paddingRight="@dimen/activity_horizontal_padding"
+            android:paddingTop="@dimen/detail_padding_top">
 
         <ImageView
-            android:id="@+id/ivEventImage"
-            android:layout_width="@dimen/regular_image_view_height_width"
-            android:layout_height="@dimen/regular_image_view_height_width"
-            android:layout_alignParentLeft="true"
-            android:layout_marginRight="@dimen/icon_main_padding_right"
-            android:scaleType="centerCrop"
-            android:transitionName="eventTopicPhoto" />
+                android:id="@+id/ivEventImage"
+                android:layout_width="@dimen/regular_image_view_height_width"
+                android:layout_height="@dimen/regular_image_view_height_width"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="@dimen/icon_main_padding_right"
+                android:scaleType="centerCrop"
+                android:transitionName="eventTopicPhoto"/>
 
         <TextView
-            android:id="@+id/tvEventTopicTitle"
-            style="@style/TextView.DetailTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/ivEventImage"
-            android:paddingLeft="@dimen/icon_padding_right"
-            android:paddingRight="@dimen/icon_padding"
-            android:paddingTop="@dimen/icon_padding"
-            android:text="@string/hint_event_title"
-            android:transitionName="eventTopicTitle" />
+                android:id="@+id/tvEventTopicTitle"
+                style="@style/TextView.DetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivEventImage"
+                android:paddingLeft="@dimen/icon_padding_right"
+                android:paddingRight="@dimen/icon_padding"
+                android:paddingTop="@dimen/icon_padding"
+                android:text="@string/hint_event_title"
+                android:transitionName="eventTopicTitle"/>
 
         <TextView
-            android:id="@+id/tvSubscribeCount"
-            style="@style/TextView.Subtitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tvEventTopicTitle"
-            android:layout_toRightOf="@+id/ivEventImage"
-            android:paddingBottom="@dimen/icon_padding"
-            android:paddingLeft="@dimen/icon_padding_right"
-            android:paddingRight="@dimen/icon_padding"
-            android:text="@string/hint_subscriber_count" />
+                android:id="@+id/tvSubscribeCount"
+                style="@style/TextView.Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEventTopicTitle"
+                android:layout_toRightOf="@+id/ivEventImage"
+                android:paddingBottom="@dimen/icon_padding"
+                android:paddingLeft="@dimen/icon_padding_right"
+                android:paddingRight="@dimen/icon_padding"
+                android:text="@string/hint_subscriber_count"/>
 
         <Button
-            android:id="@+id/btnEventUrl"
-            style="@style/FollowButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tvSubscribeCount"
-            android:layout_marginBottom="@dimen/icon_padding"
-            android:layout_marginLeft="@dimen/icon_padding_right"
-            android:layout_marginRight="@dimen/icon_padding"
-            android:layout_marginTop="@dimen/button_margin_top"
-            android:layout_toRightOf="@+id/ivEventImage"
-            android:onClick="onEventInfo"
-            android:text="@string/action_view_event_info" />
+                android:id="@+id/btnEventUrl"
+                style="@style/FollowButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSubscribeCount"
+                android:layout_marginBottom="@dimen/icon_padding"
+                android:layout_marginLeft="@dimen/icon_padding_right"
+                android:layout_marginRight="@dimen/icon_padding"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:layout_toRightOf="@+id/ivEventImage"
+                android:onClick="onEventInfo"
+                android:text="@string/action_view_event_info"/>
 
         <!-- might want to make this linear layout for the animation piece -->
         <Button
-            android:id="@+id/btnSubscribeIcon"
-            style="@style/FollowButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tvSubscribeCount"
-            android:layout_marginBottom="@dimen/icon_padding"
-            android:layout_marginLeft="@dimen/icon_padding"
-            android:layout_marginRight="@dimen/icon_padding"
-            android:layout_marginTop="@dimen/button_margin_top"
-            android:layout_toRightOf="@id/btnEventUrl"
-            android:onClick="onSubscribe" />
+                android:id="@+id/btnSubscribeIcon"
+                style="@style/FollowButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvSubscribeCount"
+                android:layout_marginBottom="@dimen/icon_padding"
+                android:layout_marginLeft="@dimen/icon_padding"
+                android:layout_marginRight="@dimen/icon_padding"
+                android:layout_marginTop="@dimen/button_margin_top"
+                android:layout_toRightOf="@id/btnEventUrl"
+                android:onClick="onSubscribe"/>
     </RelativeLayout>
 
     <FrameLayout
-        android:id="@+id/flEventContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+            android:id="@+id/flEventContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 </LinearLayout>
 

@@ -1,174 +1,174 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/llTimelineItems"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="?android:attr/selectableItemBackground"
-    android:orientation="vertical">
+              android:id="@+id/llTimelineItems"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?android:attr/selectableItemBackground"
+              android:orientation="vertical">
 
     <ProgressBar
-        android:id="@+id/pbLoading"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal"
-        android:visibility="gone" />
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
 
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/cvPostFeature"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        card_view:cardCornerRadius="1.5dp"
-        card_view:cardElevation="@dimen/card_elevation">
+                                        android:id="@+id/cvPostFeature"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        card_view:cardCornerRadius="1.5dp"
+                                        card_view:cardElevation="@dimen/card_elevation">
 
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/rlFeaturePosts"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                        android:id="@+id/rlFeaturePosts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/rlPostFeature"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"
-                android:background="@color/teal"
-                android:padding="@dimen/activity_horizontal_padding">
+                            android:id="@+id/rlPostFeature"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@color/teal"
+                            android:padding="@dimen/activity_horizontal_padding">
 
                 <com.womenwhocode.womenwhocode.utils.RoundedImageView
-                    android:id="@+id/ivEventTopicPhoto"
-                    android:layout_width="@dimen/regular_image_view_height_width"
-                    android:layout_height="@dimen/regular_image_view_height_width"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginRight="@dimen/icon_main_padding_right"
-                    android:transitionName="eventTopicPhoto" />
+                        android:id="@+id/ivEventTopicPhoto"
+                        android:layout_width="@dimen/regular_image_view_height_width"
+                        android:layout_height="@dimen/regular_image_view_height_width"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="@dimen/icon_main_padding_right"
+                        android:transitionName="eventTopicPhoto"/>
 
                 <TextView
-                    android:id="@+id/tvEventTopicTitle"
-                    style="@style/TextView.TitleText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toLeftOf="@+id/tvRelativeDate"
-                    android:layout_toRightOf="@+id/ivEventTopicPhoto"
-                    android:gravity="left"
-                    android:padding="@dimen/icon_padding"
-                    android:text="@string/hint_event_title"
-                    android:transitionName="eventTopicTitle" />
+                        android:id="@+id/tvEventTopicTitle"
+                        style="@style/TextView.TitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/tvRelativeDate"
+                        android:layout_toRightOf="@+id/ivEventTopicPhoto"
+                        android:gravity="left"
+                        android:padding="@dimen/icon_padding"
+                        android:text="@string/hint_event_title"
+                        android:transitionName="eventTopicTitle"/>
 
                 <TextView
-                    android:id="@+id/tvPostNameBy"
-                    style="@style/TextView.Subtitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/tvEventTopicTitle"
-                    android:layout_toRightOf="@+id/ivEventTopicPhoto"
-                    android:paddingLeft="@dimen/icon_padding"
-                    android:paddingRight="@dimen/icon_padding"
-                    android:text="@string/org_name_short" />
+                        android:id="@+id/tvPostNameBy"
+                        style="@style/TextView.Subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvEventTopicTitle"
+                        android:layout_toRightOf="@+id/ivEventTopicPhoto"
+                        android:paddingLeft="@dimen/icon_padding"
+                        android:paddingRight="@dimen/icon_padding"
+                        android:text="@string/org_name_short"/>
 
                 <TextView
-                    android:id="@+id/tvRelativeDate"
-                    style="@style/TextView.RelativeDate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/tvEventTopicTitle"
-                    android:layout_alignParentRight="true"
-                    android:paddingBottom="@dimen/icon_padding"
-                    android:paddingLeft="@dimen/icon_padding"
-                    android:singleLine="true"
-                    android:text="@string/hint_relative_time" />
+                        android:id="@+id/tvRelativeDate"
+                        style="@style/TextView.RelativeDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tvEventTopicTitle"
+                        android:layout_alignParentRight="true"
+                        android:paddingBottom="@dimen/icon_padding"
+                        android:paddingLeft="@dimen/icon_padding"
+                        android:singleLine="true"
+                        android:text="@string/hint_relative_time"/>
 
             </RelativeLayout>
 
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/rlPost"
-                style="?mainBackground"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentRight="true"
-                android:layout_below="@+id/rlPostFeature"
-                android:paddingBottom="@dimen/activity_horizontal_padding"
-                android:paddingLeft="@dimen/activity_horizontal_padding"
-                android:paddingTop="@dimen/activity_horizontal_padding">
+                            android:id="@+id/rlPost"
+                            style="?mainBackground"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/rlPostFeature"
+                            android:paddingBottom="@dimen/activity_horizontal_padding"
+                            android:paddingLeft="@dimen/activity_horizontal_padding"
+                            android:paddingTop="@dimen/activity_horizontal_padding">
 
                 <TextView
-                    android:id="@+id/tvEmpty"
-                    android:layout_width="@dimen/regular_image_view_height_width"
-                    android:layout_height="@dimen/regular_image_view_height_width"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginRight="@dimen/icon_padding_right"
-                    android:visibility="invisible" />
+                        android:id="@+id/tvEmpty"
+                        android:layout_width="@dimen/regular_image_view_height_width"
+                        android:layout_height="@dimen/regular_image_view_height_width"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="@dimen/icon_padding_right"
+                        android:visibility="invisible"/>
 
                 <ImageView
-                    android:id="@+id/postPic"
-                    android:layout_width="match_parent"
-                    android:layout_height="148dp"
-                    android:layout_marginBottom="@dimen/icon_padding"
-                    android:layout_marginRight="@dimen/activity_horizontal_margin"
-                    android:layout_toRightOf="@+id/tvEmpty"
-                    android:scaleType="centerCrop"
-                    android:visibility="gone" />
+                        android:id="@+id/postPic"
+                        android:layout_width="match_parent"
+                        android:layout_height="148dp"
+                        android:layout_marginBottom="@dimen/icon_padding"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@+id/tvEmpty"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"/>
 
                 <TextView
-                    android:id="@+id/tvPostDescription"
-                    style="?textRegular"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/postPic"
-                    android:layout_toRightOf="@+id/tvEmpty"
-                    android:autoLink="all"
-                    android:linksClickable="true"
-                    android:paddingRight="@dimen/activity_horizontal_padding"
-                    android:text="@string/hint_description" />
+                        android:id="@+id/tvPostDescription"
+                        style="?textRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/postPic"
+                        android:layout_toRightOf="@+id/tvEmpty"
+                        android:autoLink="all"
+                        android:linksClickable="true"
+                        android:paddingRight="@dimen/activity_horizontal_padding"
+                        android:text="@string/hint_description"/>
 
                 <TextView
-                    android:id="@+id/view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/tvPostDescription"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:layout_toRightOf="@+id/tvEmpty"
-                    android:background="@drawable/post_divider_line" />
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvPostDescription"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_toRightOf="@+id/tvEmpty"
+                        android:background="@drawable/post_divider_line"/>
 
                 <ImageButton
-                    android:id="@+id/btnShare"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_below="@+id/view"
-                    android:background="@null"
-                    android:paddingBottom="@dimen/icon_padding"
-                    android:paddingLeft="@dimen/icon_padding"
-                    android:paddingRight="@dimen/activity_horizontal_padding"
-                    android:paddingTop="7dp"
-                    android:src="@drawable/share" />
+                        android:id="@+id/btnShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/view"
+                        android:background="@null"
+                        android:paddingBottom="@dimen/icon_padding"
+                        android:paddingLeft="@dimen/icon_padding"
+                        android:paddingRight="@dimen/activity_horizontal_padding"
+                        android:paddingTop="7dp"
+                        android:src="@drawable/share"/>
 
                 <ImageButton
-                    android:id="@+id/btnAwesomeIcon"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:layout_alignLeft="@+id/tvPostDescription"
-                    android:layout_alignStart="@+id/tvPostDescription"
-                    android:layout_below="@+id/view"
-                    android:background="@null"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/awesome" />
+                        android:id="@+id/btnAwesomeIcon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_alignLeft="@+id/tvPostDescription"
+                        android:layout_alignStart="@+id/tvPostDescription"
+                        android:layout_below="@+id/view"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/awesome"/>
 
                 <TextView
-                    android:id="@+id/tvAwesomeCount"
-                    style="?awesomeCount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/btnAwesomeIcon"
-                    android:layout_toEndOf="@+id/btnAwesomeIcon"
-                    android:layout_toRightOf="@+id/btnAwesomeIcon"
-                    android:paddingBottom="@dimen/icon_padding"
-                    android:paddingLeft="@dimen/icon_padding"
-                    android:paddingRight="@dimen/icon_padding"
-                    android:paddingTop="18dp"
-                    android:text="@string/hint_awesome_count" />
+                        android:id="@+id/tvAwesomeCount"
+                        style="?awesomeCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/btnAwesomeIcon"
+                        android:layout_toEndOf="@+id/btnAwesomeIcon"
+                        android:layout_toRightOf="@+id/btnAwesomeIcon"
+                        android:paddingBottom="@dimen/icon_padding"
+                        android:paddingLeft="@dimen/icon_padding"
+                        android:paddingRight="@dimen/icon_padding"
+                        android:paddingTop="18dp"
+                        android:text="@string/hint_awesome_count"/>
 
             </RelativeLayout>
         </RelativeLayout>

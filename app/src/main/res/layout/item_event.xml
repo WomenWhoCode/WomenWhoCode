@@ -1,96 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="?android:attr/selectableItemBackground"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?android:attr/selectableItemBackground"
+              android:orientation="vertical">
 
     <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="@dimen/card_bottom_padding"
-        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"
-        card_view:cardCornerRadius="1.5dp"
-        card_view:cardElevation="@dimen/card_elevation">
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginBottom="@dimen/card_bottom_padding"
+                                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                                        card_view:cardCornerRadius="1.5dp"
+                                        card_view:cardElevation="@dimen/card_elevation">
 
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/rlEvent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                        android:id="@+id/rlEvent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/rlEventHeader"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/teal"
-                android:padding="@dimen/activity_horizontal_padding">
+                            android:id="@+id/rlEventHeader"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/teal"
+                            android:padding="@dimen/activity_horizontal_padding">
 
                 <TextView
-                    android:id="@+id/tvEventTopicTitle"
-                    style="@style/TextView.DetailTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:text="@string/hint_title"
-                    android:transitionName="eventTopicTitle" />
+                        android:id="@+id/tvEventTopicTitle"
+                        style="@style/TextView.DetailTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/hint_title"
+                        android:transitionName="eventTopicTitle"/>
 
                 <TextView
-                    android:id="@+id/tvEventNetwork"
-                    style="@style/TextView.Subtitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_below="@+id/tvEventTopicTitle"
-                    android:paddingTop="@dimen/text_subheader_padTop"
-                    android:text="@string/hint_network" />
+                        android:id="@+id/tvEventNetwork"
+                        style="@style/TextView.Subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tvEventTopicTitle"
+                        android:paddingTop="@dimen/text_subheader_padTop"
+                        android:text="@string/hint_network"/>
             </RelativeLayout>
 
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/rlEventBody"
-                style="?subBackground"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rlEventHeader"
-                android:padding="@dimen/activity_horizontal_padding">
+                            android:id="@+id/rlEventBody"
+                            style="?subBackground"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rlEventHeader"
+                            android:padding="@dimen/activity_horizontal_padding">
 
                 <TextView
-                    android:id="@+id/tvEventDate"
-                    style="?textRegular"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:autoLink="all"
-                    android:linksClickable="true"
-                    android:text="@string/hint_date" />
+                        android:id="@+id/tvEventDate"
+                        style="?textRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:autoLink="all"
+                        android:linksClickable="true"
+                        android:text="@string/hint_date"/>
 
                 <TextView
-                    android:id="@+id/tvEventTime"
-                    style="?textRegular"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_below="@id/tvEventDate"
-                    android:autoLink="all"
-                    android:linksClickable="true"
-                    android:text="@string/hint_time" />
+                        android:id="@+id/tvEventTime"
+                        style="?textRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tvEventDate"
+                        android:autoLink="all"
+                        android:linksClickable="true"
+                        android:text="@string/hint_time"/>
 
                 <TextView
-                    android:id="@+id/tvEventLocation"
-                    style="?textRegular"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_below="@id/tvEventTime"
-                    android:text="@string/hint_location" />
+                        android:id="@+id/tvEventLocation"
+                        style="?textRegular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/tvEventTime"
+                        android:text="@string/hint_location"/>
 
             </RelativeLayout>
         </RelativeLayout>

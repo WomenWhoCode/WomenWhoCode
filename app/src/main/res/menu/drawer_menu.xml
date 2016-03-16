@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+      xmlns:app="http://schemas.android.com/apk/res-auto">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_profile_fragment"
-            android:icon="@drawable/ic_account"
-            android:title="@string/action_view_profile" />
+                android:id="@+id/nav_profile_fragment"
+                android:icon="@drawable/ic_account"
+                android:title="@string/action_view_profile"/>
 
         <item
-            android:id="@+id/nav_contact_us_fragment"
-            android:icon="@drawable/ic_email"
-            android:onClick="launchMailClient"
-            android:title="@string/action_contact_us" />
+                android:id="@+id/nav_contact_us_fragment"
+                android:icon="@drawable/ic_email"
+                android:onClick="launchMailClient"
+                android:title="@string/action_contact_us"/>
 
         <item
-            android:id="@+id/theme_switch"
-            android:icon="@drawable/ic_invert_colors"
-            android:title="@string/action_switch_theme"
-            app:actionLayout="@layout/action_switch_theme"
-            app:actionViewClass="android.support.v7.widget.SwitchCompat" />
+                android:id="@+id/theme_switch"
+                android:icon="@drawable/ic_invert_colors"
+                android:title="@string/action_switch_theme"
+                app:actionLayout="@layout/action_switch_theme"
+                app:actionViewClass="android.support.v7.widget.SwitchCompat"/>
 
         <item
-            android:id="@+id/nav_logout_fragment"
-            android:icon="@drawable/ic_logout"
-            android:onClick="logout"
-            android:title="@string/action_logout" />
+                android:id="@+id/nav_logout_fragment"
+                android:icon="@drawable/ic_logout"
+                android:onClick="logout"
+                android:title="@string/action_logout"/>
     </group>
 
 </menu>

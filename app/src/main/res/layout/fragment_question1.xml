@@ -1,86 +1,86 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fragQues1"
-    style="@style/page_background_bl"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="@dimen/activity_horizontal_padding">
+                android:id="@+id/fragQues1"
+                style="@style/page_background_bl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/activity_horizontal_padding">
 
     <LinearLayout
-        android:id="@+id/llProgressImages"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
-        android:padding="@dimen/activity_horizontal_margin">
+            android:id="@+id/llProgressImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_horizontal_margin">
 
         <pl.droidsonroids.gif.GifImageView
-            android:id="@+id/img_1"
-            android:layout_width="@dimen/pf_icon_size"
-            android:layout_height="@dimen/pf_icon_size" />
+                android:id="@+id/img_1"
+                android:layout_width="@dimen/pf_icon_size"
+                android:layout_height="@dimen/pf_icon_size"/>
 
         <pl.droidsonroids.gif.GifImageView
-            android:id="@+id/img_2"
-            android:layout_width="@dimen/pf_icon_size"
-            android:layout_height="@dimen/pf_icon_size" />
+                android:id="@+id/img_2"
+                android:layout_width="@dimen/pf_icon_size"
+                android:layout_height="@dimen/pf_icon_size"/>
 
         <pl.droidsonroids.gif.GifImageView
-            android:id="@+id/img_3"
-            android:layout_width="@dimen/pf_icon_size"
-            android:layout_height="@dimen/pf_icon_size" />
+                android:id="@+id/img_3"
+                android:layout_width="@dimen/pf_icon_size"
+                android:layout_height="@dimen/pf_icon_size"/>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tvQuestion"
-        style="@style/TextView.TitleText.Pf"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/llProgressImages"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:paddingBottom="@dimen/activity_horizontal_padding"
-        android:paddingLeft="@dimen/question_horizontal_padding"
-        android:paddingRight="@dimen/question_horizontal_padding" />
+            android:id="@+id/tvQuestion"
+            style="@style/TextView.TitleText.Pf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llProgressImages"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_horizontal_padding"
+            android:paddingLeft="@dimen/question_horizontal_padding"
+            android:paddingRight="@dimen/question_horizontal_padding"/>
 
     <LinearLayout
-        android:id="@+id/chkLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/tvQuestion"
-        android:layout_marginLeft="@dimen/checkbox_padding"
-        android:layout_marginRight="@dimen/checkbox_padding"
-        android:orientation="vertical" />
-
-    <LinearLayout
-        android:id="@+id/llOtherLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/chkLayout"
-        android:layout_marginLeft="@dimen/checkbox_padding"
-        android:layout_marginRight="@dimen/checkbox_padding"
-        android:orientation="vertical">
-
-        <EditText
-            android:id="@+id/etOther"
-            style="@style/EditBoxStyle"
+            android:id="@+id/chkLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:hint="@string/hint_other"
-            android:longClickable="false"
-            android:paddingBottom="@dimen/edittext_padding"
-            android:paddingTop="@dimen/edittext_padding" />
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/tvQuestion"
+            android:layout_marginLeft="@dimen/checkbox_padding"
+            android:layout_marginRight="@dimen/checkbox_padding"
+            android:orientation="vertical"/>
+
+    <LinearLayout
+            android:id="@+id/llOtherLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/chkLayout"
+            android:layout_marginLeft="@dimen/checkbox_padding"
+            android:layout_marginRight="@dimen/checkbox_padding"
+            android:orientation="vertical">
+
+        <EditText
+                android:id="@+id/etOther"
+                style="@style/EditBoxStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:hint="@string/hint_other"
+                android:longClickable="false"
+                android:paddingBottom="@dimen/edittext_padding"
+                android:paddingTop="@dimen/edittext_padding"/>
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnNext"
-        style="@style/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="@dimen/activity_horizontal_padding"
-        android:onClick="goToNextPage"
-        android:text="@string/action_next" />
+            android:id="@+id/btnNext"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/activity_horizontal_padding"
+            android:onClick="goToNextPage"
+            android:text="@string/action_next"/>
 </RelativeLayout>

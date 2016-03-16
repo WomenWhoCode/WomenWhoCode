@@ -1,54 +1,54 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/page_background_bl"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="15dp">
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                style="@style/page_background_bl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp">
 
     <!-- add a thanks for coming back title! -->
     <com.balysv.materialripple.MaterialRippleLayout
-        android:id="@+id/ripple"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        app:mrl_rippleAlpha="0.5"
-        app:mrl_rippleColor="@color/white"
-        app:mrl_rippleOverlay="true">
-
-        <Button
-            android:id="@+id/button"
-            style="@style/button"
+            android:id="@+id/ripple"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_github"
-            android:minWidth="@dimen/button_minWidth"
-            android:paddingLeft="@dimen/activity_horizontal_padding"
-            android:paddingRight="@dimen/activity_horizontal_padding"
-            android:text="@string/action_login_github" />
+            android:layout_centerInParent="true"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleOverlay="true">
+
+        <Button
+                android:id="@+id/button"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_github"
+                android:minWidth="@dimen/button_minWidth"
+                android:paddingLeft="@dimen/activity_horizontal_padding"
+                android:paddingRight="@dimen/activity_horizontal_padding"
+                android:text="@string/action_login_github"/>
     </com.balysv.materialripple.MaterialRippleLayout>
 
 
     <com.balysv.materialripple.MaterialRippleLayout
-        android:id="@+id/ripple_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ripple"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/ripple_margin"
-        app:mrl_rippleAlpha="0.5"
-        app:mrl_rippleColor="@color/white"
-        app:mrl_rippleOverlay="true">
-
-        <Button
-            android:id="@+id/btnEmailLogin"
-            style="@style/button"
+            android:id="@+id/ripple_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_email"
-            android:minWidth="@dimen/button_minWidth"
-            android:paddingLeft="@dimen/activity_horizontal_padding"
-            android:paddingRight="@dimen/activity_horizontal_padding"
-            android:text="@string/action_login_email" />
+            android:layout_below="@+id/ripple"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/ripple_margin"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleColor="@color/white"
+            app:mrl_rippleOverlay="true">
+
+        <Button
+                android:id="@+id/btnEmailLogin"
+                style="@style/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email"
+                android:minWidth="@dimen/button_minWidth"
+                android:paddingLeft="@dimen/activity_horizontal_padding"
+                android:paddingRight="@dimen/activity_horizontal_padding"
+                android:text="@string/action_login_email"/>
     </com.balysv.materialripple.MaterialRippleLayout>
 
 </RelativeLayout>

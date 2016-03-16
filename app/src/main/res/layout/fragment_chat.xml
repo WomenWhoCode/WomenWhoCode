@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?><!-- This is the fragment  to be displayed for a section associated with a tab -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/rlChatMessagesFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+                android:id="@+id/rlChatMessagesFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
     <ProgressBar
-        android:id="@+id/pbLoading"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/rlSend"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal"
-        android:visibility="gone" />
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rlSend"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"/>
 
     <ListView
-        android:id="@+id/lvChat"
-        style="?mainBackground"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/rlSend"
-        android:divider="@null"
-        android:dividerHeight="0dp" />
+            android:id="@+id/lvChat"
+            style="?mainBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rlSend"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/rlSend"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:minHeight="50dp"
-        android:paddingTop="@dimen/icon_padding">
+                    android:id="@+id/rlSend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:minHeight="50dp"
+                    android:paddingTop="@dimen/icon_padding">
 
         <EditText
-            android:id="@+id/etMessage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_toLeftOf="@+id/btnSend"
-            android:ems="10"
-            android:gravity="top"
-            android:hint="@string/hint_chat_body"
-            android:imeOptions="actionSend"
-            android:inputType="textMultiLine|textFilter|textVisiblePassword|textNoSuggestions"
-            android:maxLines="5"
-            android:minLines="1"
-            android:paddingTop="8dp" />
+                android:id="@+id/etMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/btnSend"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="@string/hint_chat_body"
+                android:imeOptions="actionSend"
+                android:inputType="textMultiLine|textFilter|textVisiblePassword|textNoSuggestions"
+                android:maxLines="5"
+                android:minLines="1"
+                android:paddingTop="8dp"/>
 
         <ImageButton
-            android:id="@+id/btnSend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/etMessage"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="@dimen/icon_padding"
-            android:background="@color/lightestGray"
-            android:gravity="bottom|right"
-            android:paddingBottom="@dimen/icon_padding"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="@dimen/icon_padding"
-            android:src="@drawable/ic_send"
-            android:text="@string/action_send"
-            android:textSize="13sp" />
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/etMessage"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/icon_padding"
+                android:background="@color/lightestGray"
+                android:gravity="bottom|right"
+                android:paddingBottom="@dimen/icon_padding"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="@dimen/icon_padding"
+                android:src="@drawable/ic_send"
+                android:text="@string/action_send"
+                android:textSize="13sp"/>
 
     </RelativeLayout>
 </RelativeLayout>
