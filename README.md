@@ -8,13 +8,13 @@ they are apart of WWCode regardless of where they are in the world. Our goal is
 to reach 1 million engineers.  
 
 **Product Overview:** This experience will leverage existing internal data: 
-WWCode events, event streaming, resources, internal blogs, job posts, inbound 
+WWCode events, event streaming, resources, internal blogs, job posts and inbound 
 conference data. We will also provide the ability to connect with other like 
-minded engineers through in app direct messaging and event driven groups. 
+minded engineers through in-app direct messaging and event driven groups. 
 
 We are going to find out what interests our members based on a personalization 
 flow in order to feed them proper data and connect them with like minded members 
-in their area and around the world. This is creating a more immediate, and 
+in their area and around the world. This shall create a more immediate and 
 direct way to connect regardless of where you are located.
 
 ## Setup for Developers
@@ -68,10 +68,10 @@ When a repository is cloned, it has a default remote called `origin` that points
 * [Puja](https://github.com/RoyPuja)
 * [Zassmin](https://github.com/zassmin)
 
-You can metion all of us using @WomenWhoCode/android-reviewers
+You can mention all of us using @WomenWhoCode/android-reviewers
 
 ## Join in on conversations related to this project! 
-* Sign Up for the [Slack Group](https://docs.google.com/a/womenwhocode.com/forms/d/14fvqd92DimIADyyhyu9QFI7U6onWtDSvafwY0GTJPRs/viewform) to discuss issues with fellow developers and contrbutors.*
+* Sign Up for the [Slack Group](https://docs.google.com/a/womenwhocode.com/forms/d/14fvqd92DimIADyyhyu9QFI7U6onWtDSvafwY0GTJPRs/viewform) to discuss issues with fellow developers and contributors.*
 
 ## Open Source Libraries Used 
 - [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
@@ -99,4 +99,4 @@ https://www.youtube.com/watch?v=Tt4ATUSORzk
 
 contact@womenwhocode.com for any questions
 
-*WWCode reserve the right to change the open source license at anytime*
+*WWCode reserves the right to change the open source license at anytime*
